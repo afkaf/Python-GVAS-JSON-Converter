@@ -311,6 +311,10 @@ class ArrayProperty:
                         struct_element_instance_child_property = sav_reader.read_property()
                         struct_element_instance.append(struct_element_instance_child_property)
                     self.value.append(struct_element_instance)
+        elif self.subtype == "ObjectProperty":
+            # Read the number of ObjectProperty elements in the array
+            content_count = sav_reader.read_uint32()
+            self.value = [sav_reader.read_string() for _ in range(content_count)]
         else:
             self.value = sav_reader.read_bytes(content_size)
 
@@ -336,7 +340,17 @@ class ArrayProperty:
                     write_uint32(content_count) + write_string(self.name) + write_string(self.subtype) +
                     write_uint32(len(byte_array_content)) + ArrayProperty.padding +
                     write_string(self.generic_type) + ArrayProperty.unknown + byte_array_content)
+        elif self.subtype == "ObjectProperty":
+            content_count = len(self.value)
+            byte_array_content = bytearray()
+            for value in self.value:
+                byte_array_content += write_string(value)  # Assuming write_string writes a string as bytes
 
+            content_size = (4 + len(self.name) + 1 + 4 + len(self.subtype) + 1 + len(byte_array_content))
+
+            return (write_string(self.name) + write_string(self.type) + write_uint32(content_size) +
+                    ArrayProperty.padding + write_string(self.subtype) + bytes([0x00]) +
+                    write_uint32(content_count) + byte_array_content)
         content_size = len(self.value) // 2
         return (write_string(self.name) + write_string(self.type) + write_uint32(content_size) +
                 ArrayProperty.padding + write_string(self.subtype) + bytes([0x00]) + write_bytes(self.value))
