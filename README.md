@@ -14,4 +14,8 @@ Python-GVAS-JSON-Converter is a library designed to convert Unreal Engine's Game
 
 - **Convert back to .sav**: Work is underway to enable the conversion of JSON files back to the original `.sav` format.
 
+## Warning
+
+- **Untested .sav Files**: Some classes in `SavProperties.py` may not function correctly with untested `.sav` files, and certain `SavReader.py` code segments may be broken for untested datatypes. While the library has been designed with flexibility in mind, full compatibility with all `.sav` files cannot be guaranteed at this stage. I will be progressively testing other games' `.sav` files and refining the code accordingly.
+
 ---
