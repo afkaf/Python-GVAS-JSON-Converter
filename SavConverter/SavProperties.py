@@ -1,3 +1,31 @@
+from .SavWriter import *
+
+def assign_prototype(raw_property):
+    property_type = raw_property["type"]
+    property_mapping = {
+        "HeaderProperty": HeaderProperty,
+        "NoneProperty": NoneProperty,
+        "BoolProperty": BoolProperty,
+        "IntProperty": IntProperty,
+        "UInt32Property": UInt32Property,
+        "StrProperty": StrProperty,
+        "NameProperty": NameProperty,
+        "ByteProperty": ByteProperty,
+        "EnumProperty": EnumProperty,
+        "FloatProperty": FloatProperty,
+        "StructProperty": StructProperty,
+        "ArrayProperty": ArrayProperty,
+        "MulticastInlineDelegateProperty": MulticastInlineDelegateProperty,
+        "MapProperty": MapProperty,
+        "SetProperty": SetProperty,
+        "ObjectProperty": ObjectProperty,
+        "FileEndProperty": FileEndProperty
+    }
+    
+    if property_type in property_mapping:
+        return property_mapping[property_type].from_json(raw_property) # Call the from_json method
+    else:
+        raise Exception(f"Unknown property type: {property_type}")
 
 class HeaderProperty:
     GVAS = bytes([0x47, 0x56, 0x41, 0x53])
@@ -20,6 +48,12 @@ class HeaderProperty:
         ]
         self.save_game_class_name = sav_reader.read_string()
 
+    @classmethod
+    def from_json(cls, json_dict):
+        instance = cls.__new__(cls) # Create a new instance without calling the constructor
+        instance.__dict__.update(json_dict) # Update the instance attributes with the JSON dictionary
+        return instance
+
     def to_bytes(self):
         result_array = bytearray(HeaderProperty.GVAS)
         result_array += write_int32(self.save_game_version)
@@ -37,10 +71,16 @@ class HeaderProperty:
         result_array += write_string(self.save_game_class_name)
         return bytes(result_array)
 
-
 class NoneProperty:
     def __init__(self):
         self.type = "NoneProperty"
+    
+    @classmethod
+    def from_json(cls, json_dict):
+        instance = cls.__new__(cls) # Create a new instance without calling the constructor
+        instance.__dict__.update(json_dict) # Update the instance attributes with the JSON dictionary
+        return instance
+
     bytes = bytes([0x05, 0x00, 0x00, 0x00, 0x4E, 0x6F, 0x6E, 0x65, 0x00])
     type = "NoneProperty"
 
@@ -58,6 +98,12 @@ class BoolProperty:
         sav_reader.read_bytes(len(BoolProperty.padding))
         self.value = sav_reader.read_boolean()
         sav_reader.read_bytes(1)
+
+    @classmethod
+    def from_json(cls, json_dict):
+        instance = cls.__new__(cls) # Create a new instance without calling the constructor
+        instance.__dict__.update(json_dict) # Update the instance attributes with the JSON dictionary
+        return instance
 
     def to_bytes(self):
         result = bytearray(write_string(self.name))
@@ -78,6 +124,12 @@ class IntProperty:
         sav_reader.read_bytes(len(IntProperty.padding))
         self.value = sav_reader.read_int32()
 
+    @classmethod
+    def from_json(cls, json_dict):
+        instance = cls.__new__(cls) # Create a new instance without calling the constructor
+        instance.__dict__.update(json_dict) # Update the instance attributes with the JSON dictionary
+        return instance
+
     def to_bytes(self):
         return write_string(self.name) + write_string(self.type) + IntProperty.padding + write_int32(self.value)
 
@@ -91,6 +143,12 @@ class UInt32Property:
         self.name = name
         sav_reader.read_bytes(len(UInt32Property.padding))
         self.value = sav_reader.read_uint32()
+
+    @classmethod
+    def from_json(cls, json_dict):
+        instance = cls.__new__(cls) # Create a new instance without calling the constructor
+        instance.__dict__.update(json_dict) # Update the instance attributes with the JSON dictionary
+        return instance
 
     def to_bytes(self):
         return write_string(self.name) + write_string(self.type) + UInt32Property.padding + write_uint32(self.value)
@@ -107,6 +165,12 @@ class StrProperty:
         sav_reader.read_bytes(len(StrProperty.padding))
         self.value = sav_reader.read_string()
 
+    @classmethod
+    def from_json(cls, json_dict):
+        instance = cls.__new__(cls) # Create a new instance without calling the constructor
+        instance.__dict__.update(json_dict) # Update the instance attributes with the JSON dictionary
+        return instance
+
     def to_bytes(self):
         return (write_string(self.name) + write_string(self.type) + write_bytes(self.unknown) +
                 StrProperty.padding + write_string(self.value))
@@ -122,6 +186,12 @@ class NameProperty:
         self.unknown = sav_reader.read_bytes(1)
         sav_reader.read_bytes(len(NameProperty.padding))
         self.value = sav_reader.read_string()
+
+    @classmethod
+    def from_json(cls, json_dict):
+        instance = cls.__new__(cls) # Create a new instance without calling the constructor
+        instance.__dict__.update(json_dict) # Update the instance attributes with the JSON dictionary
+        return instance
 
     def to_bytes(self):
         return (write_string(self.name) + write_string(self.type) + write_bytes(self.unknown) +
@@ -171,18 +241,57 @@ class ByteProperty:
         else:
             self.value = sav_reader.read_bytes(content_size)
 
+    @classmethod
+    def from_json(cls, json_dict):
+        instance = cls.__new__(cls) # Create a new instance without calling the constructor
+        instance.__dict__.update(json_dict) # Update the instance attributes with the JSON dictionary
+        return instance
+
     def to_bytes(self):
-        result = write_string(self.name) + write_string(self.type) + write_uint32(len(self.value) * 16)
-        result += ByteProperty.padding + write_string(self.subtype) + bytes([0x00])
         if self.subtype == "StructProperty":
+            content_count = len(self.value)
+            byte_array_content = bytearray()
+            
             if self.generic_type == "Guid":
                 for value in self.value:
-                    result += write_bytes(value)
+                    byte_array_content += write_bytes(value)
             else:
-                for struct_element_instance in self.value:
-                    for struct_element_instance_child_property in struct_element_instance:
-                        result += struct_element_instance_child_property.to_bytes()
+                for value in self.value:
+                    if isinstance(value, list):
+                        for child_value in value:
+                            assign_prototype(child_value)
+                            byte_array_content += child_value.to_bytes()
+                    else:
+                        assign_prototype(value)
+                        byte_array_content += value.to_bytes()
+            
+            content_size = (
+                4 + 4 + len(self.name) + 1
+                + 4 + len(self.subtype) + 1
+                + 4 + len(ByteProperty.padding)
+                + 4 + len(self.generic_type) + 1
+                + len(ByteProperty.unknown)
+                + len(byte_array_content)
+            )
+            
+            result = (
+                write_string(self.name) + write_string(self.type) + write_uint32(content_size)
+                + ByteProperty.padding + write_string(self.subtype) + bytes([0x00])
+                + write_uint32(content_count) + write_string(self.name)
+                + write_string(self.subtype) + write_uint32(len(byte_array_content))
+                + ByteProperty.padding + write_string(self.generic_type)
+                + ByteProperty.unknown + byte_array_content
+            )
+        else:
+            content_size = len(self.value) // 2
+            result = (
+                write_string(self.name) + write_string(self.type) + write_uint32(content_size)
+                + ByteProperty.padding + write_string(self.subtype) + bytes([0x00])
+                + write_bytes(self.value)
+            )
+
         return bytes(result)
+
 
 
 class EnumProperty:
@@ -194,13 +303,19 @@ class EnumProperty:
         self.name = name
         content_size = sav_reader.read_uint32()
         sav_reader.read_bytes(len(EnumProperty.padding))
-        self.subtype = sav_reader.read_string()
+        self.enum = sav_reader.read_string()
         sav_reader.read_bytes(1)
         self.value = sav_reader.read_string()
 
+    @classmethod
+    def from_json(cls, json_dict):
+        instance = cls.__new__(cls) # Create a new instance without calling the constructor
+        instance.__dict__.update(json_dict) # Update the instance attributes with the JSON dictionary
+        return instance
+
     def to_bytes(self):
-        result = write_string(self.name) + write_string(self.type) + write_uint32(len(self.value))
-        result += EnumProperty.padding + write_string(self.subtype) + bytes([0x00]) + write_string(self.value)
+        result = write_string(self.name) + write_string(self.type) + write_uint32(len(self.value)+5)
+        result += EnumProperty.padding + write_string(self.enum) + bytes([0x00]) + write_string(self.value)
         return bytes(result)
 
 
@@ -213,6 +328,12 @@ class FloatProperty:
         self.name = name
         sav_reader.read_bytes(len(FloatProperty.padding))
         self.value = sav_reader.read_float32()
+
+    @classmethod
+    def from_json(cls, json_dict):
+        instance = cls.__new__(cls) # Create a new instance without calling the constructor
+        instance.__dict__.update(json_dict) # Update the instance attributes with the JSON dictionary
+        return instance
 
     def to_bytes(self):
         return write_string(self.name) + write_string(self.type) + FloatProperty.padding + write_float32(self.value)
@@ -244,6 +365,12 @@ class StructProperty:
         while sav_reader.offset < content_end_position:
             self.value.append(sav_reader.read_property())
 
+    @classmethod
+    def from_json(cls, json_dict):
+        instance = cls.__new__(cls) # Create a new instance without calling the constructor
+        instance.__dict__.update(json_dict) # Update the instance attributes with the JSON dictionary
+        return instance
+
     def to_bytes(self):
         if self.subtype == "Guid":
             return (write_string(self.name) + write_string(self.type) + write_uint32(16) +
@@ -259,10 +386,10 @@ class StructProperty:
         for value in self.value:
             if isinstance(value, list):
                 for item in value:
-                    assign_prototype(item)
+                    item = assign_prototype(item)
                     content_bytes += item.to_bytes()
             else:
-                assign_prototype(value)
+                value = assign_prototype(value)
                 content_bytes += value.to_bytes()
 
         return (write_string(self.name) + write_string(self.type) + write_uint32(len(content_bytes)) +
@@ -318,6 +445,12 @@ class ArrayProperty:
         else:
             self.value = sav_reader.read_bytes(content_size)
 
+    @classmethod
+    def from_json(cls, json_dict):
+        instance = cls.__new__(cls) # Create a new instance without calling the constructor
+        instance.__dict__.update(json_dict) # Update the instance attributes with the JSON dictionary
+        return instance
+
     def to_bytes(self):
         if self.subtype == "StructProperty":
             content_count = len(self.value)
@@ -325,10 +458,10 @@ class ArrayProperty:
             for value in self.value:
                 if isinstance(value, list):
                     for item in value:
-                        assign_prototype(item)
+                        item = assign_prototype(item)
                         byte_array_content += item.to_bytes()
                 else:
-                    assign_prototype(value)
+                    value = assign_prototype(value)
                     byte_array_content += value.to_bytes()
 
             content_size = (4 + 4 + len(self.name) + 1 + 4 + len(self.subtype) + 1 + 4 +
@@ -346,7 +479,8 @@ class ArrayProperty:
             for value in self.value:
                 byte_array_content += write_string(value)  # Assuming write_string writes a string as bytes
 
-            content_size = (4 + len(self.name) + 1 + 4 + len(self.subtype) + 1 + len(byte_array_content))
+            content_size = len(byte_array_content) + 4 #+ len(self.name) + 1 + 4 + len(self.subtype) + 1)
+
 
             return (write_string(self.name) + write_string(self.type) + write_uint32(content_size) +
                     ArrayProperty.padding + write_string(self.subtype) + bytes([0x00]) +
@@ -492,6 +626,12 @@ class ObjectProperty:
         sav_reader.read_bytes(len(ObjectProperty.padding))
         self.value = sav_reader.read_string()
 
+    @classmethod
+    def from_json(cls, json_dict):
+        instance = cls.__new__(cls) # Create a new instance without calling the constructor
+        instance.__dict__.update(json_dict) # Update the instance attributes with the JSON dictionary
+        return instance
+
     def to_bytes(self):
         content_size = 4 + len(self.value) + 1
         return (write_string(self.name) + write_string(self.type) + write_uint32(content_size) +
@@ -502,10 +642,15 @@ class FileEndProperty:
     def __init__(self):
         self.type = "FileEndProperty"
 
+    @classmethod
+    def from_json(cls, json_dict):
+        instance = cls.__new__(cls) # Create a new instance without calling the constructor
+        instance.__dict__.update(json_dict) # Update the instance attributes with the JSON dictionary
+        return instance
+    
     bytes = NoneProperty.bytes + bytes([0x00, 0x00, 0x00, 0x00])
     type = "FileEndProperty"
 
     @staticmethod
     def to_bytes():
         return FileEndProperty.bytes
-

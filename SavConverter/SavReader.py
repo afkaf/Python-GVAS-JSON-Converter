@@ -2,7 +2,7 @@ from .SavProperties import *
 from struct import pack, unpack
 
 class SavReader:
-    def __init__(self, file_array_buffer):
+    def __init__(self, file_array_buffer = None):
         self.offset = 0
         self.file_array_buffer = file_array_buffer
         self.file_size = len(file_array_buffer)
