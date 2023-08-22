@@ -1,9 +1,6 @@
 from .SavProperties import *
 import json
 
-with open('ExampleSavFiles/SaveSlot.sav', 'rb') as f:
-    test_file = f.read()
-
 def json_to_sav(json_string):
     properties = json.loads(json_string)
     output = bytearray()

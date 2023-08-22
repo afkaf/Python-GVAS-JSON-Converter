@@ -1,0 +1,6495 @@
+[
+  {
+    "type": "HeaderProperty",
+    "save_game_version": 2,
+    "package_version": 522,
+    "engine_version": "4.27.2",
+    "engine_build": 18319896,
+    "engine_branch": "++UE4+Release-4.27",
+    "custom_version_format": 3,
+    "custom_versions": [
+      [
+        "fa7af5fc8342765058e6a9b9322da0ff",
+        68
+      ],
+      [
+        "fb0c82a75943a720142c548c50cf2396",
+        6
+      ],
+      [
+        "4e7ce782a5432333c5136bb4f30d3197",
+        0
+      ],
+      [
+        "22d5549cbe4f26a846072194d082b461",
+        43
+      ],
+      [
+        "e432d8b00d4f891fb77ecfaca24afd36",
+        10
+      ],
+      [
+        "2843c6e1534d2ca2868e6ca38cbd1764",
+        0
+      ],
+      [
+        "3cc15e37fb48e406f08400b57e712a26",
+        4
+      ],
+      [
+        "ed68b0e4e94294f40bda31a241bb462e",
+        40
+      ],
+      [
+        "3f74fccf8044b043df14919373201d17",
+        37
+      ],
+      [
+        "b5492bb0e94420bbb73204a36003e452",
+        3
+      ],
+      [
+        "5c10e4a4b549a159c440c5a7eedf7e54",
+        0
+      ],
+      [
+        "c931c839dc47e65a179c449a7c8e1c3e",
+        0
+      ],
+      [
+        "331bf078984feaebea84b4b9a25ab9cc",
+        14
+      ],
+      [
+        "0f383166e0434d2d27cf09805aa95669",
+        0
+      ],
+      [
+        "9f8bf812fc4a75880cd97ca629bd3a38",
+        45
+      ],
+      [
+        "4ce75a7b104c70d2985758a95a2a210b",
+        13
+      ],
+      [
+        "186929d7dd4bd61da864e29d8438c13c",
+        3
+      ],
+      [
+        "7852a1c2fe4ae7bfff90176c55f71d53",
+        1
+      ],
+      [
+        "d4a3ac6ec14cec40ed8b86b7c58f4209",
+        3
+      ],
+      [
+        "dd75e5292746a3e076d2109deadc2c23",
+        17
+      ],
+      [
+        "5da643af4749d37f8e3e739805bbc1d9",
+        15
+      ],
+      [
+        "ec6c266b8f4bc71ed9e40ba307fc4209",
+        1
+      ],
+      [
+        "613df70dea473fa2e98927b79a49410c",
+        1
+      ],
+      [
+        "86181d60844f64acded316aad6c7ea0d",
+        47
+      ],
+      [
+        "686308e7584c236b701b3984915e2616",
+        1
+      ],
+      [
+        "d6bcff9d58014f49821221e288a8923c",
+        10
+      ],
+      [
+        "acd0aef26f41fe9a7faa6486fcd626fa",
+        1
+      ],
+      [
+        "0b1f4f17a545c6b4e82e3fb17d91fbd0",
+        10
+      ],
+      [
+        "834af9356c4058e2f50918a37c241096",
+        41
+      ],
+      [
+        "6ec18fb6e2421b8b5c2153b4fe448805",
+        1
+      ],
+      [
+        "0685e1b2c2cf7342bbf44ea507ba8b75",
+        1
+      ],
+      [
+        "3689f564ba421bfd897296ba4efad0d5",
+        1
+      ],
+      [
+        "27d80e6f954809a68d99919ca40e1890",
+        2
+      ],
+      [
+        "e79e7f713a49b0e93291b3880781381b",
+        8
+      ],
+      [
+        "50326854af4899809698c88bb7f9adfb",
+        0
+      ],
+      [
+        "194d0c4370495471699b6987e5b090df",
+        15
+      ],
+      [
+        "bd32feaa144c9553255e6ab6ddd13210",
+        1
+      ],
+      [
+        "8ee1af23584ee14c52c2618db7be53b9",
+        11
+      ],
+      [
+        "eab762a43a4e99f41fecc199b2e12482",
+        4
+      ],
+      [
+        "bdfdb52e104dac018ff33681daa59333",
+        5
+      ],
+      [
+        "4f359d502f49e6f6b28549a71c633c07",
+        0
+      ],
+      [
+        "40eb564adc11f5107e34d392e76ac9b2",
+        2
+      ],
+      [
+        "004a8ad7974658e8b519a8bab4467d48",
+        18
+      ],
+      [
+        "86f879551f4c3a937b08ba832fb96163",
+        2
+      ],
+      [
+        "52be2f610b4053da914f0d917c85b19f",
+        1
+      ],
+      [
+        "367a23a4c941eacaf818a28ff31b6858",
+        4
+      ],
+      [
+        "753f4e80494b8870068cd6a4dcb67e3c",
+        5
+      ],
+      [
+        "f20a68fba34bef59b519a8ba3d44c873",
+        2
+      ],
+      [
+        "0eb75099174e1ab40dfaccbbd67f8157",
+        1
+      ]
+    ],
+    "save_game_class_name": "/Script/CrabChampions.CrabSG"
+  },
+  {
+    "type": "IntProperty",
+    "name": "CrabChampionsVersion",
+    "value": 1830
+  },
+  {
+    "type": "IntProperty",
+    "name": "XPToNextLevelUp",
+    "value": 1524
+  },
+  {
+    "type": "ArrayProperty",
+    "name": "RankedWeapons",
+    "subtype": "StructProperty",
+    "generic_type": "CrabRankedWeapon",
+    "value": [
+      [
+        {
+          "type": "ObjectProperty",
+          "name": "Weapon",
+          "value": "/Game/Blueprint/Weapon/DualPistols/DA_Weapon_DualPistols.DA_Weapon_DualPistols"
+        },
+        {
+          "type": "EnumProperty",
+          "name": "Rank",
+          "enum": "ECrabRank",
+          "value": "ECrabRank::Bronze"
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "ObjectProperty",
+          "name": "Weapon",
+          "value": "/Game/Blueprint/Weapon/AutoRifle/DA_Weapon_AutoRifle.DA_Weapon_AutoRifle"
+        },
+        {
+          "type": "EnumProperty",
+          "name": "Rank",
+          "enum": "ECrabRank",
+          "value": "ECrabRank::Bronze"
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "ObjectProperty",
+          "name": "Weapon",
+          "value": "/Game/Blueprint/Weapon/DualShotguns/DA_Weapon_DualShotguns.DA_Weapon_DualShotguns"
+        },
+        {
+          "type": "EnumProperty",
+          "name": "Rank",
+          "enum": "ECrabRank",
+          "value": "ECrabRank::Bronze"
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "ObjectProperty",
+          "name": "Weapon",
+          "value": "/Game/Blueprint/Weapon/AutoShotgun/DA_Weapon_AutoShotgun.DA_Weapon_AutoShotgun"
+        },
+        {
+          "type": "EnumProperty",
+          "name": "Rank",
+          "enum": "ECrabRank",
+          "value": "ECrabRank::Bronze"
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "ObjectProperty",
+          "name": "Weapon",
+          "value": "/Game/Blueprint/Weapon/BurstPistol/DA_Weapon_BurstPistol.DA_Weapon_BurstPistol"
+        },
+        {
+          "type": "EnumProperty",
+          "name": "Rank",
+          "enum": "ECrabRank",
+          "value": "ECrabRank::Bronze"
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "ObjectProperty",
+          "name": "Weapon",
+          "value": "/Game/Blueprint/Weapon/Sniper/DA_Weapon_Sniper.DA_Weapon_Sniper"
+        },
+        {
+          "type": "EnumProperty",
+          "name": "Rank",
+          "enum": "ECrabRank",
+          "value": "ECrabRank::Bronze"
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "ObjectProperty",
+          "name": "Weapon",
+          "value": "/Game/Blueprint/Weapon/Crossbow/DA_Weapon_Crossbow.DA_Weapon_Crossbow"
+        },
+        {
+          "type": "EnumProperty",
+          "name": "Rank",
+          "enum": "ECrabRank",
+          "value": "ECrabRank::Bronze"
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "ObjectProperty",
+          "name": "Weapon",
+          "value": "/Game/Blueprint/Weapon/OrbLauncher/DA_Weapon_OrbLauncher.DA_Weapon_OrbLauncher"
+        },
+        {
+          "type": "EnumProperty",
+          "name": "Rank",
+          "enum": "ECrabRank",
+          "value": "ECrabRank::Bronze"
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "ObjectProperty",
+          "name": "Weapon",
+          "value": "/Game/Blueprint/Weapon/RocketLauncher/DA_Weapon_RocketLauncher.DA_Weapon_RocketLauncher"
+        },
+        {
+          "type": "EnumProperty",
+          "name": "Rank",
+          "enum": "ECrabRank",
+          "value": "ECrabRank::Bronze"
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "ObjectProperty",
+          "name": "Weapon",
+          "value": "/Game/Blueprint/Weapon/Minigun/DA_Weapon_Minigun.DA_Weapon_Minigun"
+        },
+        {
+          "type": "EnumProperty",
+          "name": "Rank",
+          "enum": "ECrabRank",
+          "value": "ECrabRank::Bronze"
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "ObjectProperty",
+          "name": "Weapon",
+          "value": "/Game/Blueprint/Weapon/BladeLauncher/DA_Weapon_BladeLauncher.DA_Weapon_BladeLauncher"
+        },
+        {
+          "type": "EnumProperty",
+          "name": "Rank",
+          "enum": "ECrabRank",
+          "value": "ECrabRank::Bronze"
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "ObjectProperty",
+          "name": "Weapon",
+          "value": "/Game/Blueprint/Weapon/ClusterLauncher/DA_Weapon_ClusterLauncher.DA_Weapon_ClusterLauncher"
+        },
+        {
+          "type": "EnumProperty",
+          "name": "Rank",
+          "enum": "ECrabRank",
+          "value": "ECrabRank::Bronze"
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ]
+    ]
+  },
+  {
+    "type": "IntProperty",
+    "name": "AccountLevel",
+    "value": 27
+  },
+  {
+    "type": "EnumProperty",
+    "name": "Difficulty",
+    "enum": "ECrabDifficulty",
+    "value": "ECrabDifficulty::Nightmare"
+  },
+  {
+    "type": "ObjectProperty",
+    "name": "CrabSkin",
+    "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Aqua.MI_Aqua"
+  },
+  {
+    "type": "ObjectProperty",
+    "name": "WeaponDA",
+    "value": "/Game/Blueprint/Weapon/Crossbow/DA_Weapon_Crossbow.DA_Weapon_Crossbow"
+  },
+  {
+    "type": "ArrayProperty",
+    "name": "Challenges",
+    "subtype": "StructProperty",
+    "generic_type": "CrabChallenge",
+    "value": [
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "0d",
+          "value": "ACH_NONE"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "11",
+          "value": "Buy the game"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 1
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": true
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0c",
+              "value": "Default"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Default.T_Thumbnail_Default"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/Default/MI_Crab_Default.MI_Crab_Default"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "18",
+          "value": "ACH_CRAB_CHAMPION_I"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "20",
+          "value": "Get a win on any difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 1
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": true
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0d",
+              "value": "Blue Ice"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_BlueIce.T_Thumbnail_BlueIce"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_BlueIce.MI_BlueIce"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "19",
+          "value": "ACH_CRAB_CHAMPION_II"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "26",
+          "value": "Get a win on Nightmare difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0c",
+              "value": "Glimmer"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Glimmer.T_Thumbnail_Glimmer"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Glimmer.MI_Glimmer"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "1a",
+          "value": "ACH_CRAB_CHAMPION_III"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "2d",
+          "value": "Get 5 wins total on Nightmare difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "09",
+              "value": "Flow"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Flow.T_Thumbnail_Flow"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Flow.MI_Flow"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "10",
+          "value": "ACH_SKILLED"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "2a",
+          "value": "Get 3 wins in a row on any difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "09",
+              "value": "Aqua"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Aqua.T_Thumbnail_Aqua"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Aqua.MI_Aqua"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "0c",
+          "value": "ACH_PRO"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "30",
+          "value": "Get 2 wins in a row on Nightmare difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0f",
+              "value": "Iridescent"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Iridescent.T_Thumbnail_Iridescent"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Iridescent.MI_Iridescent"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "0f",
+          "value": "ACH_MASTER"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "30",
+          "value": "Get 5 wins in a row on Nightmare difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0b",
+              "value": "Warped"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Warped.T_Thumbnail_Warped"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Warped.MI_Warped"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "0f",
+          "value": "ACH_LOOPER"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "2a",
+          "value": "Get a win after looping at least once"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 1
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": true
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0a",
+              "value": "Amber"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Amber.T_Thumbnail_Amber"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Amber.MI_Amber"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "11",
+          "value": "ACH_FLAWLESS"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "3d",
+          "value": "Get a win on Normal difficulty without taking any damage"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0d",
+              "value": "Blue Ice"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_BlueIce.T_Thumbnail_BlueIce"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_BlueIce.MI_BlueIce"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "0f",
+          "value": "ACH_FRUGAL"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "41",
+          "value": "Get a win on Normal difficulty with 5 or less shop purchases"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0f",
+              "value": "Watermelon"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Watermelon.T_Thumbnail_Watermelon"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Watermelon.MI_Watermelon"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "14",
+          "value": "ACH_MILLIONAIRE"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "3e",
+          "value": "Get a win with over 1M unspent crystals in your inventory"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 1
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": true
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "09",
+              "value": "Aqua"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Aqua.T_Thumbnail_Aqua"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Aqua.MI_Aqua"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "14",
+          "value": "ACH_UNSTOPPABLE"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "2a",
+          "value": "Get a win with over 7500 eliminations"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0b",
+              "value": "Warped"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Warped.T_Thumbnail_Warped"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Warped.MI_Warped"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "17",
+          "value": "ACH_SLICE_AND_DICE"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "29",
+          "value": "Get a win without firing your weapon"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0d",
+              "value": "Chemical"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Chemical.T_Thumbnail_Chemical"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Chemical.MI_Chemical"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "13",
+          "value": "ACH_SPEEDRUN_I"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "2a",
+          "value": "Clear island 20 in 16 minutes or less"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0d",
+              "value": "Blue Ice"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_BlueIce.T_Thumbnail_BlueIce"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_BlueIce.MI_BlueIce"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "14",
+          "value": "ACH_SPEEDRUN_II"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "2a",
+          "value": "Clear island 50 in 40 minutes or less"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0a",
+              "value": "Amber"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Amber.T_Thumbnail_Amber"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Amber.MI_Amber"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "15",
+          "value": "ACH_SPEEDRUN_III"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "2b",
+          "value": "Clear island 100 in 70 minutes or less"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0a",
+              "value": "Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Tiger.T_Thumbnail_Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Tiger.MI_Tiger"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "0d",
+          "value": "ACH_TANK"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "29",
+          "value": "Get 10000 max health on a single run"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 1
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": true
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "09",
+              "value": "Snow"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Snow.T_Thumbnail_Snow"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Snow.MI_Snow"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "12",
+          "value": "ACH_MAXED_OUT"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "46",
+          "value": "Fill all mod and perk slots in your inventory during a single run"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 1
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": true
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0b",
+              "value": "Warped"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Warped.T_Thumbnail_Warped"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Warped.MI_Warped"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "13",
+          "value": "ACH_SOLID_GOLD"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "38",
+          "value": "Fill 20 weapon mod slots with legendary weapon mods"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 1
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": true
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "09",
+              "value": "Aqua"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Aqua.T_Thumbnail_Aqua"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Aqua.MI_Aqua"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "0f",
+          "value": "ACH_GREEDY"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "40",
+          "value": "Defeat a boss with at least 5 greed perks in your inventory"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "09",
+              "value": "Grid"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Grid.T_Thumbnail_Grid"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Grid.MI_Grid"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "1b",
+          "value": "ACH_PLAYING_WITH_POWER"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "37",
+          "value": "Level up a mod or perk to level 20 in a single run"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 1
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": true
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0c",
+              "value": "Cheetah"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Cheetah.T_Thumbnail_Cheetah"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Cheetah.MI_Cheetah"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "11",
+          "value": "ACH_RECYCLER"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "28",
+          "value": "Salvage 100 pickups in a single run"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 1
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": true
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0e",
+              "value": "Geometric"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Geometric.T_Thumbnail_Geometric"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Geometric.MI_Geometric"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "14",
+          "value": "ACH_BIG_SPENDER"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "30",
+          "value": "Make 100 purchases at shops in a single run"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 1
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": true
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0b",
+              "value": "Orange"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Orange.T_Thumbnail_Orange"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Orange.MI_Orange"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "0f",
+          "value": "ACH_ROLLER"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "2a",
+          "value": "Reroll shops 50 times in a single run"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 1
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": true
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "09",
+              "value": "Pink"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Pink.T_Thumbnail_Pink"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Pink.MI_Pink"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "0f",
+          "value": "ACH_VANDAL"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "26",
+          "value": "Destroy 25 totems in a single run"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 1
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": true
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "09",
+              "value": "Aqua"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Aqua.T_Thumbnail_Aqua"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Aqua.MI_Aqua"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "0f",
+          "value": "ACH_FLEX_I"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "2e",
+          "value": "Defeat an elite without taking any damage"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 1
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": true
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0a",
+              "value": "Waves"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Waves.T_Thumbnail_Waves"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Waves.MI_Waves"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "10",
+          "value": "ACH_FLEX_II"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "2c",
+          "value": "Defeat a boss without taking any damage"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 1
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": true
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0f",
+              "value": "Watermelon"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Watermelon.T_Thumbnail_Watermelon"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Watermelon.MI_Watermelon"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "11",
+          "value": "ACH_FLEX_III"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "4c",
+          "value": "Clear the first biome on Nightmare difficulty without taking any damage"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "11",
+              "value": "Purple Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_PurpleTiger.T_Thumbnail_PurpleTiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_PurpleTiger.MI_PurpleTiger"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "15",
+          "value": "ACH_ULTRA_DAMAGE"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "2b",
+          "value": "Deal over 100K damage in a single shot"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 1
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": true
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0b",
+              "value": "Warped"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Warped.T_Thumbnail_Warped"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Warped.MI_Warped"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "0b",
+          "value": "ACH_EZ"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "26",
+          "value": "Defeat a boss in under 10 seconds"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 1
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": true
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0f",
+              "value": "Watermelon"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Watermelon.T_Thumbnail_Watermelon"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Watermelon.MI_Watermelon"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "11",
+          "value": "ACH_MARATHON"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "1d",
+          "value": "Survive until island 100"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 1
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": true
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "09",
+              "value": "Aqua"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Aqua.T_Thumbnail_Aqua"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Aqua.MI_Aqua"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "15",
+          "value": "ACH_CHALLENGER_I"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "4b",
+          "value": "Get a win on any difficulty with 5 or more difficulty modifiers active"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0a",
+              "value": "Swirl"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Swirl.T_Thumbnail_Swirl"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Swirl.MI_Swirl"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "16",
+          "value": "ACH_CHALLENGER_II"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "45",
+          "value": "Get a win on any difficulty with all difficulty modifiers active"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0a",
+              "value": "Jelly"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Jelly.T_Thumbnail_Jelly"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Jelly.MI_Jelly"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "17",
+          "value": "ACH_CHALLENGER_III"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "4b",
+          "value": "Get a win on Nightmare difficulty with all difficulty modifiers active"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0d",
+              "value": "Obsidian"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Obsidian.T_Thumbnail_Obsidian"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Obsidian.MI_Obsidian"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "1c",
+          "value": "ACH_AUTO_RIFLE_MASTER_I"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "34",
+          "value": "Get a win with the Auto Rifle on any difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0f",
+              "value": "Blue Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_BlueTiger.T_Thumbnail_BlueTiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_BlueTiger.MI_BlueTiger"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "1d",
+          "value": "ACH_AUTO_RIFLE_MASTER_II"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "3a",
+          "value": "Get a win with the Auto Rifle on Nightmare difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0e",
+              "value": "Red Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_RedTiger.T_Thumbnail_RedTiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_RedTiger.MI_RedTiger"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "1e",
+          "value": "ACH_DUAL_SHOTGUN_MASTER_I"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "37",
+          "value": "Get a win with the Dual Shotguns on any difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 1
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": true
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0a",
+              "value": "Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Tiger.T_Thumbnail_Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Tiger.MI_Tiger"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "1f",
+          "value": "ACH_DUAL_SHOTGUN_MASTER_II"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "3d",
+          "value": "Get a win with the Dual Shotguns on Nightmare difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0b",
+              "value": "Silver"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Silver.T_Thumbnail_Silver"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Silver.MI_Silver"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "1d",
+          "value": "ACH_DUAL_PISTOL_MASTER_I"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "36",
+          "value": "Get a win with the Dual Pistols on any difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0c",
+              "value": "Emerald"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Emerald.T_Thumbnail_Emerald"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Emerald.MI_Emerald"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "1e",
+          "value": "ACH_DUAL_PISTOL_MASTER_II"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "3c",
+          "value": "Get a win with the Dual Pistols on Nightmare difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "09",
+              "value": "Ruby"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Ruby.T_Thumbnail_Ruby"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Ruby.MI_Ruby"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "1e",
+          "value": "ACH_AUTO_SHOTGUN_MASTER_I"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "36",
+          "value": "Get a win with the Auto Shotgun on any difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0e",
+              "value": "Jet Black"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_JetBlack.T_Thumbnail_JetBlack"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_JetBlack.MI_JetBlack"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "1f",
+          "value": "ACH_AUTO_SHOTGUN_MASTER_II"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "3c",
+          "value": "Get a win with the Auto Shotgun on Nightmare difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0d",
+              "value": "Sapphire"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Sapphire.T_Thumbnail_Sapphire"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Sapphire.MI_Sapphire"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "1e",
+          "value": "ACH_BURST_PISTOL_MASTER_I"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "36",
+          "value": "Get a win with the Burst Pistol on any difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0f",
+              "value": "Blue Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_BlueTiger.T_Thumbnail_BlueTiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_BlueTiger.MI_BlueTiger"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "1f",
+          "value": "ACH_BURST_PISTOL_MASTER_II"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "3c",
+          "value": "Get a win with the Burst Pistol on Nightmare difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0e",
+              "value": "Red Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_RedTiger.T_Thumbnail_RedTiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_RedTiger.MI_RedTiger"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "18",
+          "value": "ACH_SNIPER_MASTER_I"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "30",
+          "value": "Get a win with the Sniper on any difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0f",
+              "value": "Blue Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_BlueTiger.T_Thumbnail_BlueTiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_BlueTiger.MI_BlueTiger"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "19",
+          "value": "ACH_SNIPER_MASTER_II"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "36",
+          "value": "Get a win with the Sniper on Nightmare difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0e",
+              "value": "Red Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_RedTiger.T_Thumbnail_RedTiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_RedTiger.MI_RedTiger"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "1a",
+          "value": "ACH_CROSSBOW_MASTER_I"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "32",
+          "value": "Get a win with the Crossbow on any difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0f",
+              "value": "Blue Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_BlueTiger.T_Thumbnail_BlueTiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_BlueTiger.MI_BlueTiger"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "1b",
+          "value": "ACH_CROSSBOW_MASTER_II"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "38",
+          "value": "Get a win with the Crossbow on Nightmare difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0e",
+              "value": "Red Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_RedTiger.T_Thumbnail_RedTiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_RedTiger.MI_RedTiger"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "1e",
+          "value": "ACH_ORB_LAUNCHER_MASTER_I"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "36",
+          "value": "Get a win with the Orb Launcher on any difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0f",
+              "value": "Blue Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_BlueTiger.T_Thumbnail_BlueTiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_BlueTiger.MI_BlueTiger"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "1f",
+          "value": "ACH_ORB_LAUNCHER_MASTER_II"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "3c",
+          "value": "Get a win with the Orb Launcher on Nightmare difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0e",
+              "value": "Red Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_RedTiger.T_Thumbnail_RedTiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_RedTiger.MI_RedTiger"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "21",
+          "value": "ACH_ROCKET_LAUNCHER_MASTER_I"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "39",
+          "value": "Get a win with the Rocket Launcher on any difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0f",
+              "value": "Blue Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_BlueTiger.T_Thumbnail_BlueTiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_BlueTiger.MI_BlueTiger"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "22",
+          "value": "ACH_ROCKET_LAUNCHER_MASTER_II"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "3f",
+          "value": "Get a win with the Rocket Launcher on Nightmare difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0e",
+              "value": "Red Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_RedTiger.T_Thumbnail_RedTiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_RedTiger.MI_RedTiger"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "19",
+          "value": "ACH_MINIGUN_MASTER_I"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "31",
+          "value": "Get a win with the Minigun on any difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 1
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": true
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0f",
+              "value": "Blue Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_BlueTiger.T_Thumbnail_BlueTiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_BlueTiger.MI_BlueTiger"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "1a",
+          "value": "ACH_MINIGUN_MASTER_II"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "37",
+          "value": "Get a win with the Minigun on Nightmare difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0e",
+              "value": "Red Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_RedTiger.T_Thumbnail_RedTiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_RedTiger.MI_RedTiger"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "20",
+          "value": "ACH_BLADE_LAUNCHER_MASTER_I"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "38",
+          "value": "Get a win with the Blade Launcher on any difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0f",
+              "value": "Blue Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_BlueTiger.T_Thumbnail_BlueTiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_BlueTiger.MI_BlueTiger"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "21",
+          "value": "ACH_BLADE_LAUNCHER_MASTER_II"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "3e",
+          "value": "Get a win with the Blade Launcher on Nightmare difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0e",
+              "value": "Red Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_RedTiger.T_Thumbnail_RedTiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_RedTiger.MI_RedTiger"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "22",
+          "value": "ACH_CLUSTER_LAUNCHER_MASTER_I"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "3a",
+          "value": "Get a win with the Cluster Launcher on any difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0f",
+              "value": "Blue Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_BlueTiger.T_Thumbnail_BlueTiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_BlueTiger.MI_BlueTiger"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "23",
+          "value": "ACH_CLUSTER_LAUNCHER_MASTER_II"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "40",
+          "value": "Get a win with the Cluster Launcher on Nightmare difficulty"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 1
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0e",
+              "value": "Red Tiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_RedTiger.T_Thumbnail_RedTiger"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_RedTiger.MI_RedTiger"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "13",
+          "value": "ACH_GUNSLINGER"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "2b",
+          "value": "Get a win with all weapons in the game"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 0
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 12
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "0a",
+              "value": "Regal"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Regal.T_Thumbnail_Regal"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Regal.MI_Regal"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ],
+      [
+        {
+          "type": "NameProperty",
+          "name": "ChallengeID",
+          "unknown": "14",
+          "value": "ACH_CRAB_LEGEND"
+        },
+        {
+          "type": "StrProperty",
+          "name": "ChallengeDescription",
+          "unknown": "1c",
+          "value": "Complete all challenges"
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeProgress",
+          "value": 19
+        },
+        {
+          "type": "IntProperty",
+          "name": "ChallengeGoal",
+          "value": 59
+        },
+        {
+          "type": "BoolProperty",
+          "name": "bChallengeCompleted",
+          "value": false
+        },
+        {
+          "type": "StructProperty",
+          "name": "CosmeticReward",
+          "subtype": "CrabCosmetic",
+          "value": [
+            {
+              "type": "EnumProperty",
+              "name": "CosmeticType",
+              "enum": "ECrabCosmeticType",
+              "value": "ECrabCosmeticType::CrabSkin"
+            },
+            {
+              "type": "StrProperty",
+              "name": "CosmeticName",
+              "unknown": "09",
+              "value": "Gold"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticIcon",
+              "value": "/Game/UI/Thumbnail/T_Thumbnail_Gold.T_Thumbnail_Gold"
+            },
+            {
+              "type": "ObjectProperty",
+              "name": "CosmeticObject",
+              "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Gold.MI_Gold"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ]
+    ]
+  },
+  {
+    "type": "ArrayProperty",
+    "name": "UnlockedWeapons",
+    "subtype": "ObjectProperty",
+    "value": [
+      "/Game/Blueprint/Weapon/DualPistols/DA_Weapon_DualPistols.DA_Weapon_DualPistols",
+      "/Game/Blueprint/Weapon/AutoRifle/DA_Weapon_AutoRifle.DA_Weapon_AutoRifle",
+      "/Game/Blueprint/Weapon/DualShotguns/DA_Weapon_DualShotguns.DA_Weapon_DualShotguns",
+      "/Game/Blueprint/Weapon/AutoShotgun/DA_Weapon_AutoShotgun.DA_Weapon_AutoShotgun",
+      "/Game/Blueprint/Weapon/BurstPistol/DA_Weapon_BurstPistol.DA_Weapon_BurstPistol",
+      "/Game/Blueprint/Weapon/Sniper/DA_Weapon_Sniper.DA_Weapon_Sniper",
+      "/Game/Blueprint/Weapon/Crossbow/DA_Weapon_Crossbow.DA_Weapon_Crossbow",
+      "/Game/Blueprint/Weapon/OrbLauncher/DA_Weapon_OrbLauncher.DA_Weapon_OrbLauncher",
+      "/Game/Blueprint/Weapon/RocketLauncher/DA_Weapon_RocketLauncher.DA_Weapon_RocketLauncher",
+      "/Game/Blueprint/Weapon/Minigun/DA_Weapon_Minigun.DA_Weapon_Minigun",
+      "/Game/Blueprint/Weapon/BladeLauncher/DA_Weapon_BladeLauncher.DA_Weapon_BladeLauncher",
+      "/Game/Blueprint/Weapon/ClusterLauncher/DA_Weapon_ClusterLauncher.DA_Weapon_ClusterLauncher"
+    ]
+  },
+  {
+    "type": "ArrayProperty",
+    "name": "UnlockedWeaponMods",
+    "subtype": "ObjectProperty",
+    "value": [
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_BouncingShot.DA_WeaponMod_BouncingShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_AcceleratingShot.DA_WeaponMod_AcceleratingShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_ZigZagShot.DA_WeaponMod_ZigZagShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_SpiralShot.DA_WeaponMod_SpiralShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_SnakeShot.DA_WeaponMod_SnakeShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_RecoilShot.DA_WeaponMod_RecoilShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_FastShot.DA_WeaponMod_FastShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_HealthShot.DA_WeaponMod_HealthShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_BigMag.DA_WeaponMod_BigMag",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_HighCaliber.DA_WeaponMod_HighCaliber",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_WindUp.DA_WeaponMod_WindUp",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_SteadyShot.DA_WeaponMod_SteadyShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_TrickShot.DA_WeaponMod_TrickShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_AerialShot.DA_WeaponMod_AerialShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_GripTape.DA_WeaponMod_GripTape",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_BlindFire.DA_WeaponMod_BlindFire",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_MoneyShot.DA_WeaponMod_MoneyShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_TimeShot.DA_WeaponMod_TimeShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_TimeBolt.DA_WeaponMod_TimeBolt",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_UltraShot.DA_WeaponMod_UltraShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_SharpShot.DA_WeaponMod_SharpShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_GlueShot.DA_WeaponMod_GlueShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_ChaoticShot.DA_WeaponMod_ChaoticShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_BigShot.DA_WeaponMod_BigShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_Precision.DA_WeaponMod_Precision",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_ClipShot.DA_WeaponMod_ClipShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_Uppercut.DA_WeaponMod_Uppercut",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_HeavyShot.DA_WeaponMod_HeavyShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_HeavyHitter.DA_WeaponMod_HeavyHitter",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_Sharpshooter.DA_WeaponMod_Sharpshooter",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_HotShot.DA_WeaponMod_HotShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_StreakShot.DA_WeaponMod_StreakShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_CriticalChain.DA_WeaponMod_CriticalChain",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_PowerPunch.DA_WeaponMod_PowerPunch",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_RapidFire.DA_WeaponMod_RapidFire",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_LightShot.DA_WeaponMod_LightShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_KnockbackShot.DA_WeaponMod_KnockbackShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_IceShot.DA_WeaponMod_IceShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_FireShot.DA_WeaponMod_FireShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_LightningShot.DA_WeaponMod_LightningShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_PoisonShot.DA_WeaponMod_PoisonShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_RandomShot.DA_WeaponMod_RandomShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Rare/DA_WeaponMod_ReloadArc.DA_WeaponMod_ReloadArc",
+      "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_TripleShot.DA_WeaponMod_TripleShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_ArcShot.DA_WeaponMod_ArcShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_SplitShot.DA_WeaponMod_SplitShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_ScatterShot.DA_WeaponMod_ScatterShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_TargetingShot.DA_WeaponMod_TargetingShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_DamageShot.DA_WeaponMod_DamageShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_MegaCrit.DA_WeaponMod_MegaCrit",
+      "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_CriticalLink.DA_WeaponMod_CriticalLink",
+      "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_CriticalBlast.DA_WeaponMod_CriticalBlast",
+      "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_Supercharged.DA_WeaponMod_Supercharged",
+      "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_Juiced.DA_WeaponMod_Juiced",
+      "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_AuraShot.DA_WeaponMod_AuraShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_PiercingShot.DA_WeaponMod_PiercingShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_BubbleShot.DA_WeaponMod_BubbleShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_DaggerArc.DA_WeaponMod_DaggerArc",
+      "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_PiercingWave.DA_WeaponMod_PiercingWave",
+      "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_ArcaneBlast.DA_WeaponMod_ArcaneBlast",
+      "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_ShotgunBlast.DA_WeaponMod_ShotgunBlast",
+      "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_MaceShot.DA_WeaponMod_MaceShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_FireworkShot.DA_WeaponMod_FireworkShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_ThornShot.DA_WeaponMod_ThornShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_SparkShot.DA_WeaponMod_SparkShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_Firepower.DA_WeaponMod_Firepower",
+      "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_XShot.DA_WeaponMod_XShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_SquareShot.DA_WeaponMod_SquareShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_DoubleTap.DA_WeaponMod_DoubleTap",
+      "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_SplashDamage.DA_WeaponMod_SplashDamage",
+      "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_ProximityBarrage.DA_WeaponMod_ProximityBarrage",
+      "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_CriticalBlades.DA_WeaponMod_CriticalBlades",
+      "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_BombShot.DA_WeaponMod_BombShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_LandmineShot.DA_WeaponMod_LandmineShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_TorpedoShot.DA_WeaponMod_TorpedoShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_FireballShot.DA_WeaponMod_FireballShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_SharpenedAxe.DA_WeaponMod_SharpenedAxe",
+      "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_TriangleShot.DA_WeaponMod_TriangleShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_SporeShot.DA_WeaponMod_SporeShot",
+      "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_IceStorm.DA_WeaponMod_IceStorm",
+      "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_FireStorm.DA_WeaponMod_FireStorm",
+      "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_PoisonStorm.DA_WeaponMod_PoisonStorm",
+      "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_IceStrike.DA_WeaponMod_IceStrike",
+      "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_LightningStrike.DA_WeaponMod_LightningStrike",
+      "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_PoisonStrike.DA_WeaponMod_PoisonStrike",
+      "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_SpikeStrike.DA_WeaponMod_SpikeStrike"
+    ]
+  },
+  {
+    "type": "ArrayProperty",
+    "name": "UnlockedGrenadeMods",
+    "subtype": "ObjectProperty",
+    "value": [
+      "/Game/Blueprint/Pickup/GrenadeMod/Rare/DA_GrenadeMod_SpiralGrenade.DA_GrenadeMod_SpiralGrenade",
+      "/Game/Blueprint/Pickup/GrenadeMod/Rare/DA_GrenadeMod_SnakeGrenade.DA_GrenadeMod_SnakeGrenade",
+      "/Game/Blueprint/Pickup/GrenadeMod/Rare/DA_GrenadeMod_GlueGrenade.DA_GrenadeMod_GlueGrenade",
+      "/Game/Blueprint/Pickup/GrenadeMod/Rare/DA_GrenadeMod_ChaoticGrenade.DA_GrenadeMod_ChaoticGrenade",
+      "/Game/Blueprint/Pickup/GrenadeMod/Rare/DA_GrenadeMod_HeavyGrenade.DA_GrenadeMod_HeavyGrenade",
+      "/Game/Blueprint/Pickup/GrenadeMod/Rare/DA_GrenadeMod_BigGrenade.DA_GrenadeMod_BigGrenade",
+      "/Game/Blueprint/Pickup/GrenadeMod/Rare/DA_GrenadeMod_ImplodingGrenade.DA_GrenadeMod_ImplodingGrenade",
+      "/Game/Blueprint/Pickup/GrenadeMod/Rare/DA_GrenadeMod_CritGrenade.DA_GrenadeMod_CritGrenade",
+      "/Game/Blueprint/Pickup/GrenadeMod/Rare/DA_GrenadeMod_BiggerBoom.DA_GrenadeMod_BiggerBoom",
+      "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_DamageGrenade.DA_GrenadeMod_DamageGrenade",
+      "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_LayeredGrenade.DA_GrenadeMod_LayeredGrenade",
+      "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_AuraGrenade.DA_GrenadeMod_AuraGrenade",
+      "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_BubbleBlast.DA_GrenadeMod_BubbleBlast",
+      "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_DaggerBlast.DA_GrenadeMod_DaggerBlast",
+      "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_FireworkExplosion.DA_GrenadeMod_FireworkExplosion",
+      "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_ThornExplosion.DA_GrenadeMod_ThornExplosion",
+      "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_SparkExplosion.DA_GrenadeMod_SparkExplosion",
+      "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_Grenadier.DA_GrenadeMod_Grenadier",
+      "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_HomingGrenade.DA_GrenadeMod_HomingGrenade",
+      "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_CloneExplosion.DA_GrenadeMod_CloneExplosion",
+      "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_BombExplosion.DA_GrenadeMod_BombExplosion",
+      "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_SpinningBlade.DA_GrenadeMod_SpinningBlade",
+      "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_SporeExplosion.DA_GrenadeMod_SporeExplosion",
+      "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_UltraMushroom.DA_GrenadeMod_UltraMushroom",
+      "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_CrystalBarrage.DA_GrenadeMod_CrystalBarrage",
+      "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_EnergyRing.DA_GrenadeMod_EnergyRing",
+      "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_BlackHole.DA_GrenadeMod_BlackHole",
+      "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_IceExplosion.DA_GrenadeMod_IceExplosion",
+      "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_FireExplosion.DA_GrenadeMod_FireExplosion",
+      "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_LightningExplosion.DA_GrenadeMod_LightningExplosion",
+      "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_PoisonExplosion.DA_GrenadeMod_PoisonExplosion",
+      "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_SpikeStrike.DA_GrenadeMod_SpikeStrike",
+      "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_CrystalStrike.DA_GrenadeMod_CrystalStrike"
+    ]
+  },
+  {
+    "type": "ArrayProperty",
+    "name": "UnlockedPerks",
+    "subtype": "ObjectProperty",
+    "value": [
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_Fortitude.DA_Perk_Fortitude",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_Endurance.DA_Perk_Endurance",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_HealthyCombo.DA_Perk_HealthyCombo",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_Scavenger.DA_Perk_Scavenger",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_ValuedCustomer.DA_Perk_ValuedCustomer",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_Vitality.DA_Perk_Vitality",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_SecondWind.DA_Perk_SecondWind",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_DamageCombo.DA_Perk_DamageCombo",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_FMJ.DA_Perk_FMJ",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_IceCube.DA_Perk_IceCube",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_OilCan.DA_Perk_OilCan",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_MetalRod.DA_Perk_MetalRod",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_PoisonVial.DA_Perk_PoisonVial",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_GhostAmmo.DA_Perk_GhostAmmo",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_Efficiency.DA_Perk_Efficiency",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_Autoloader.DA_Perk_Autoloader",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_RiggedTotems.DA_Perk_RiggedTotems",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_FastClaws.DA_Perk_FastClaws",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_SonicBoom.DA_Perk_SonicBoom",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_RedFury.DA_Perk_RedFury",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_Adrenaline.DA_Perk_Adrenaline",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_Paycheck.DA_Perk_Paycheck",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_SpecialDelivery.DA_Perk_SpecialDelivery",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_TonysBlackCard.DA_Perk_TonysBlackCard",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_PersonalSpace.DA_Perk_PersonalSpace",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_Bullseye.DA_Perk_Bullseye",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_Vampire.DA_Perk_Vampire",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_Regenerator.DA_Perk_Regenerator",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_HardTarget.DA_Perk_HardTarget",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_BigClaws.DA_Perk_BigClaws",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_SharpClaws.DA_Perk_SharpClaws",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_IronClaws.DA_Perk_IronClaws",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_CriticalClaws.DA_Perk_CriticalClaws",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_Blender.DA_Perk_Blender",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_DangerClose.DA_Perk_DangerClose",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_EagleEye.DA_Perk_EagleEye",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_PowerArmor.DA_Perk_PowerArmor",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_CriticalThinking.DA_Perk_CriticalThinking",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_SpeedDemon.DA_Perk_SpeedDemon",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_Stamina.DA_Perk_Stamina",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_CrystalCombo.DA_Perk_CrystalCombo",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_Snatcher.DA_Perk_Snatcher",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_FinishingMove.DA_Perk_FinishingMove",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_GoldCoating.DA_Perk_GoldCoating",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_Icebreaker.DA_Perk_Icebreaker",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_HotSteam.DA_Perk_HotSteam",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_IceCold.DA_Perk_IceCold",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_Firestarter.DA_Perk_Firestarter",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_HighVoltage.DA_Perk_HighVoltage",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_Toxic.DA_Perk_Toxic",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_Driller.DA_Perk_Driller",
+      "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_EnhancedTurrets.DA_Perk_EnhancedTurrets",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_DamageAura.DA_Perk_DamageAura",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_FireAura.DA_Perk_FireAura",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_LightningAura.DA_Perk_LightningAura",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_PoisonAura.DA_Perk_PoisonAura",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_ExplosiveArmor.DA_Perk_ExplosiveArmor",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_FlammableArmor.DA_Perk_FlammableArmor",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_FireClaws.DA_Perk_FireClaws",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_BigHearts.DA_Perk_BigHearts",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_GrimReaper.DA_Perk_GrimReaper",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_Bulletproof.DA_Perk_Bulletproof",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_TastyOrange.DA_Perk_TastyOrange",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_Checklist.DA_Perk_Checklist",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_Assassin.DA_Perk_Assassin",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_Gemstone.DA_Perk_Gemstone",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_Collector.DA_Perk_Collector",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_MoneyIsPower.DA_Perk_MoneyIsPower",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_AllYouCanEat.DA_Perk_AllYouCanEat",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_RepellingDash.DA_Perk_RepellingDash",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_StreamerLoot.DA_Perk_StreamerLoot",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_BigChests.DA_Perk_BigChests",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_PerformanceBonus.DA_Perk_PerformanceBonus",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_BonusCrystals.DA_Perk_BonusCrystals",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_Reinforced.DA_Perk_Reinforced",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_SentryTurret.DA_Perk_SentryTurret",
+      "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_SniperTurret.DA_Perk_SniperTurret",
+      "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_RareTreasure.DA_Perk_RareTreasure",
+      "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_ExplodingEnemies.DA_Perk_ExplodingEnemies",
+      "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_FreezingEnemies.DA_Perk_FreezingEnemies",
+      "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_FlammableEnemies.DA_Perk_FlammableEnemies",
+      "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_ElectricEnemies.DA_Perk_ElectricEnemies",
+      "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_PoisonousEnemies.DA_Perk_PoisonousEnemies",
+      "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_GoldDice.DA_Perk_GoldDice",
+      "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_FaultyChests.DA_Perk_FaultyChests",
+      "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_DoubleVision.DA_Perk_DoubleVision",
+      "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_CrystalAsteroids.DA_Perk_CrystalAsteroids",
+      "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_LevelUp.DA_Perk_LevelUp",
+      "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_RegeneratingArmor.DA_Perk_RegeneratingArmor",
+      "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_IceDash.DA_Perk_IceDash",
+      "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_DaggerDash.DA_Perk_DaggerDash",
+      "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_Powerslide.DA_Perk_Powerslide",
+      "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_Clearance.DA_Perk_Clearance",
+      "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_FireTurret.DA_Perk_FireTurret",
+      "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_PoisonTurret.DA_Perk_PoisonTurret",
+      "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_MortarTurret.DA_Perk_MortarTurret",
+      "/Game/Blueprint/Pickup/Perk/Greed/DA_Perk_LeapOfFaith.DA_Perk_LeapOfFaith",
+      "/Game/Blueprint/Pickup/Perk/Greed/DA_Perk_Bribe.DA_Perk_Bribe",
+      "/Game/Blueprint/Pickup/Perk/Greed/DA_Perk_DoubleTrouble.DA_Perk_DoubleTrouble",
+      "/Game/Blueprint/Pickup/Perk/Greed/DA_Perk_Juggernaut.DA_Perk_Juggernaut",
+      "/Game/Blueprint/Pickup/Perk/Greed/DA_Perk_GlassCannon.DA_Perk_GlassCannon",
+      "/Game/Blueprint/Pickup/Perk/Greed/DA_Perk_DamageSeeker.DA_Perk_DamageSeeker",
+      "/Game/Blueprint/Pickup/Perk/Greed/DA_Perk_BruteForce.DA_Perk_BruteForce",
+      "/Game/Blueprint/Pickup/Perk/Greed/DA_Perk_UpTheAnte.DA_Perk_UpTheAnte",
+      "/Game/Blueprint/Pickup/Perk/Greed/DA_Perk_Brawler.DA_Perk_Brawler",
+      "/Game/Blueprint/Pickup/Perk/Greed/DA_Perk_CursedLottery.DA_Perk_CursedLottery",
+      "/Game/Blueprint/Pickup/Perk/Greed/DA_Perk_SlipperySlope.DA_Perk_SlipperySlope",
+      "/Game/Blueprint/Pickup/Perk/Greed/DA_Perk_DoubleEdgedSword.DA_Perk_DoubleEdgedSword",
+      "/Game/Blueprint/Pickup/Perk/Greed/DA_Perk_Workaholic.DA_Perk_Workaholic",
+      "/Game/Blueprint/Pickup/Perk/Greed/DA_Perk_RisingStar.DA_Perk_RisingStar",
+      "/Game/Blueprint/Pickup/Perk/Greed/DA_Perk_LimitedLoot.DA_Perk_LimitedLoot",
+      "/Game/Blueprint/Pickup/Perk/Greed/DA_Perk_HighRoller.DA_Perk_HighRoller"
+    ]
+  },
+  {
+    "type": "IntProperty",
+    "name": "EasyHighScore",
+    "value": 6760
+  },
+  {
+    "type": "IntProperty",
+    "name": "EasyAttempts",
+    "value": 11
+  },
+  {
+    "type": "IntProperty",
+    "name": "EasyWins",
+    "value": 3
+  },
+  {
+    "type": "IntProperty",
+    "name": "EasyHighestIslandReached",
+    "value": 60
+  },
+  {
+    "type": "IntProperty",
+    "name": "NormalHighScore",
+    "value": 74429
+  },
+  {
+    "type": "IntProperty",
+    "name": "NormalAttempts",
+    "value": 74
+  },
+  {
+    "type": "IntProperty",
+    "name": "NormalWins",
+    "value": 2
+  },
+  {
+    "type": "IntProperty",
+    "name": "NormalHighestIslandReached",
+    "value": 180
+  },
+  {
+    "type": "IntProperty",
+    "name": "NightmareHighScore",
+    "value": 6057
+  },
+  {
+    "type": "IntProperty",
+    "name": "NightmareAttempts",
+    "value": 16
+  },
+  {
+    "type": "IntProperty",
+    "name": "NightmareHighestIslandReached",
+    "value": 37
+  },
+  {
+    "type": "StructProperty",
+    "name": "AutoSave",
+    "subtype": "CrabAutoSave",
+    "value": [
+      {
+        "type": "IntProperty",
+        "name": "CurrentTime",
+        "value": 30016
+      },
+      {
+        "type": "ArrayProperty",
+        "name": "DifficultyModifiers",
+        "subtype": "EnumProperty",
+        "value": "01000000250000004543726162446966666963756c74794d6f6469666965723a3a4e6f5361666574794e657400"
+      },
+      {
+        "type": "StructProperty",
+        "name": "NextIslandInfo",
+        "subtype": "CrabNextIslandInfo",
+        "value": [
+          {
+            "type": "EnumProperty",
+            "name": "Biome",
+            "enum": "ECrabBiome",
+            "value": "ECrabBiome::Volcanic"
+          },
+          {
+            "type": "IntProperty",
+            "name": "CurrentIsland",
+            "value": 206
+          },
+          {
+            "type": "NameProperty",
+            "name": "IslandName",
+            "unknown": "16",
+            "value": "Volcanic_Arena_01"
+          },
+          {
+            "type": "EnumProperty",
+            "name": "IslandType",
+            "enum": "ECrabIslandType",
+            "value": "ECrabIslandType::Arena"
+          },
+          {
+            "type": "EnumProperty",
+            "name": "RewardLootPool",
+            "enum": "ECrabLootPool",
+            "value": "ECrabLootPool::Damage"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ]
+      },
+      {
+        "type": "IntProperty",
+        "name": "Points",
+        "value": 89359
+      },
+      {
+        "type": "IntProperty",
+        "name": "ComboCounter",
+        "value": 5752
+      },
+      {
+        "type": "FloatProperty",
+        "name": "Combo",
+        "value": 5.0
+      },
+      {
+        "type": "IntProperty",
+        "name": "Eliminations",
+        "value": 8585
+      },
+      {
+        "type": "IntProperty",
+        "name": "ShotsFired",
+        "value": 117154
+      },
+      {
+        "type": "IntProperty",
+        "name": "DamageDealt",
+        "value": 616533362
+      },
+      {
+        "type": "IntProperty",
+        "name": "HighestDamageDealt",
+        "value": 23973576
+      },
+      {
+        "type": "IntProperty",
+        "name": "DamageTaken",
+        "value": 268070
+      },
+      {
+        "type": "IntProperty",
+        "name": "NumFlawlessIslands",
+        "value": 75
+      },
+      {
+        "type": "StructProperty",
+        "name": "HealthInfo",
+        "subtype": "CrabHealthInfo",
+        "value": [
+          {
+            "type": "IntProperty",
+            "name": "CurrentArmorPlates",
+            "value": 6
+          },
+          {
+            "type": "FloatProperty",
+            "name": "CurrentArmorPlateHealth",
+            "value": 292468.9375
+          },
+          {
+            "type": "FloatProperty",
+            "name": "PreviousArmorPlateHealth",
+            "value": 277620.78125
+          },
+          {
+            "type": "FloatProperty",
+            "name": "CurrentHealth",
+            "value": 1225075.75
+          },
+          {
+            "type": "FloatProperty",
+            "name": "CurrentMaxHealth",
+            "value": 1225075.75
+          },
+          {
+            "type": "FloatProperty",
+            "name": "PreviousHealth",
+            "value": 1211275.75
+          },
+          {
+            "type": "FloatProperty",
+            "name": "PreviousMaxHealth",
+            "value": 1225075.75
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ]
+      },
+      {
+        "type": "FloatProperty",
+        "name": "HealthMultiplier",
+        "value": 1.0
+      },
+      {
+        "type": "FloatProperty",
+        "name": "DamageMultiplier",
+        "value": 138.81991577148438
+      },
+      {
+        "type": "ObjectProperty",
+        "name": "WeaponDA",
+        "value": "/Game/Blueprint/Weapon/Minigun/DA_Weapon_Minigun.DA_Weapon_Minigun"
+      },
+      {
+        "type": "ByteProperty",
+        "name": "NumWeaponModSlots",
+        "subtype": "None",
+        "value": "18"
+      },
+      {
+        "type": "ArrayProperty",
+        "name": "WeaponMods",
+        "subtype": "StructProperty",
+        "generic_type": "CrabWeaponMod",
+        "value": [
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_PiercingShot.DA_WeaponMod_PiercingShot"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "21"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_SparkShot.DA_WeaponMod_SparkShot"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "2d"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_DamageShot.DA_WeaponMod_DamageShot"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "35"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_PoisonStorm.DA_WeaponMod_PoisonStorm"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "0e"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_SquareShot.DA_WeaponMod_SquareShot"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "18"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_ProximityBarrage.DA_WeaponMod_ProximityBarrage"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "12"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_CriticalBlades.DA_WeaponMod_CriticalBlades"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "19"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_LandmineShot.DA_WeaponMod_LandmineShot"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "0c"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_TorpedoShot.DA_WeaponMod_TorpedoShot"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "09"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_SpikeStrike.DA_WeaponMod_SpikeStrike"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "0b"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_FireballShot.DA_WeaponMod_FireballShot"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "06"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_FireStorm.DA_WeaponMod_FireStorm"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "0c"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_SharpenedAxe.DA_WeaponMod_SharpenedAxe"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "0b"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_IceStorm.DA_WeaponMod_IceStorm"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "08"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_LightningStrike.DA_WeaponMod_LightningStrike"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "09"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_IceStrike.DA_WeaponMod_IceStrike"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "07"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_BombShot.DA_WeaponMod_BombShot"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "0a"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_SporeShot.DA_WeaponMod_SporeShot"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "0d"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_XShot.DA_WeaponMod_XShot"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "0b"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_SplashDamage.DA_WeaponMod_SplashDamage"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "07"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_TriangleShot.DA_WeaponMod_TriangleShot"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "08"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_Firepower.DA_WeaponMod_Firepower"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "08"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_PoisonStrike.DA_WeaponMod_PoisonStrike"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "05"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "WeaponModDA",
+              "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_DoubleTap.DA_WeaponMod_DoubleTap"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "11"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "ByteProperty",
+        "name": "NumGrenadeModSlots",
+        "subtype": "None",
+        "value": "18"
+      },
+      {
+        "type": "ArrayProperty",
+        "name": "GrenadeMods",
+        "subtype": "StructProperty",
+        "generic_type": "CrabGrenadeMod",
+        "value": [
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "GrenadeModDA",
+              "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_UltraMushroom.DA_GrenadeMod_UltraMushroom"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "10"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "GrenadeModDA",
+              "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_BombExplosion.DA_GrenadeMod_BombExplosion"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "12"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "GrenadeModDA",
+              "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_PoisonExplosion.DA_GrenadeMod_PoisonExplosion"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "13"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "GrenadeModDA",
+              "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_EnergyRing.DA_GrenadeMod_EnergyRing"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "0f"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "GrenadeModDA",
+              "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_LightningExplosion.DA_GrenadeMod_LightningExplosion"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "11"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "GrenadeModDA",
+              "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_SpinningBlade.DA_GrenadeMod_SpinningBlade"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "12"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "GrenadeModDA",
+              "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_HomingGrenade.DA_GrenadeMod_HomingGrenade"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "0e"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "GrenadeModDA",
+              "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_IceExplosion.DA_GrenadeMod_IceExplosion"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "0f"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "GrenadeModDA",
+              "value": "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_LayeredGrenade.DA_GrenadeMod_LayeredGrenade"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "12"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "GrenadeModDA",
+              "value": "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_SparkExplosion.DA_GrenadeMod_SparkExplosion"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "20"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "GrenadeModDA",
+              "value": "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_DamageGrenade.DA_GrenadeMod_DamageGrenade"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "2c"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "GrenadeModDA",
+              "value": "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_ThornExplosion.DA_GrenadeMod_ThornExplosion"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "27"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "GrenadeModDA",
+              "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_FireExplosion.DA_GrenadeMod_FireExplosion"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "10"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "GrenadeModDA",
+              "value": "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_BubbleBlast.DA_GrenadeMod_BubbleBlast"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "21"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "GrenadeModDA",
+              "value": "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_FireworkExplosion.DA_GrenadeMod_FireworkExplosion"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "21"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "GrenadeModDA",
+              "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_BlackHole.DA_GrenadeMod_BlackHole"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "0e"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "GrenadeModDA",
+              "value": "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_DaggerBlast.DA_GrenadeMod_DaggerBlast"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "1d"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "GrenadeModDA",
+              "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_CloneExplosion.DA_GrenadeMod_CloneExplosion"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "0e"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "GrenadeModDA",
+              "value": "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_AuraGrenade.DA_GrenadeMod_AuraGrenade"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "1b"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "GrenadeModDA",
+              "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_CrystalBarrage.DA_GrenadeMod_CrystalBarrage"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "0b"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "GrenadeModDA",
+              "value": "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_Grenadier.DA_GrenadeMod_Grenadier"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "11"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "GrenadeModDA",
+              "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_SporeExplosion.DA_GrenadeMod_SporeExplosion"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "0d"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "ByteProperty",
+        "name": "NumPerkSlots",
+        "subtype": "None",
+        "value": "18"
+      },
+      {
+        "type": "ArrayProperty",
+        "name": "Perks",
+        "subtype": "StructProperty",
+        "generic_type": "CrabPerk",
+        "value": [
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_BonusCrystals.DA_Perk_BonusCrystals"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "26"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_HardTarget.DA_Perk_HardTarget"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "55"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Greed/DA_Perk_LimitedLoot.DA_Perk_LimitedLoot"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "05"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_SpecialDelivery.DA_Perk_SpecialDelivery"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "41"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_Checklist.DA_Perk_Checklist"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "36"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_Assassin.DA_Perk_Assassin"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "33"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_GoldDice.DA_Perk_GoldDice"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "1a"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_Bulletproof.DA_Perk_Bulletproof"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "1d"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_TastyOrange.DA_Perk_TastyOrange"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "34"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_BigHearts.DA_Perk_BigHearts"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "44"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_BigChests.DA_Perk_BigChests"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "21"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_StreamerLoot.DA_Perk_StreamerLoot"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "29"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_Gemstone.DA_Perk_Gemstone"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "37"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_Clearance.DA_Perk_Clearance"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "11"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_TonysBlackCard.DA_Perk_TonysBlackCard"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "3a"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_MoneyIsPower.DA_Perk_MoneyIsPower"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "1c"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_RegeneratingArmor.DA_Perk_RegeneratingArmor"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "17"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_FaultyChests.DA_Perk_FaultyChests"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "18"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_MortarTurret.DA_Perk_MortarTurret"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "15"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_RareTreasure.DA_Perk_RareTreasure"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "15"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_PoisonAura.DA_Perk_PoisonAura"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "1a"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_FireTurret.DA_Perk_FireTurret"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "13"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_DoubleVision.DA_Perk_DoubleVision"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "12"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "ObjectProperty",
+              "name": "PerkDA",
+              "value": "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_LevelUp.DA_Perk_LevelUp"
+            },
+            {
+              "type": "ByteProperty",
+              "name": "Level",
+              "subtype": "None",
+              "value": "0b"
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "IntProperty",
+        "name": "NumTimesSalvaged",
+        "value": 1373
+      },
+      {
+        "type": "IntProperty",
+        "name": "NumShopPurchases",
+        "value": 1097
+      },
+      {
+        "type": "IntProperty",
+        "name": "NumShopRerolls",
+        "value": 96
+      },
+      {
+        "type": "IntProperty",
+        "name": "NumTotemsDestroyed",
+        "value": 33
+      },
+      {
+        "type": "UInt32Property",
+        "name": "Crystals",
+        "value": 2147483647
+      },
+      {
+        "type": "IntProperty",
+        "name": "TotalTimeTaken",
+        "value": 29433
+      },
+      {
+        "type": "ArrayProperty",
+        "name": "CompletedChallenges",
+        "subtype": "StructProperty",
+        "generic_type": "CrabChallenge",
+        "value": [
+          [
+            {
+              "type": "NameProperty",
+              "name": "ChallengeID",
+              "unknown": "14",
+              "value": "ACH_BIG_SPENDER"
+            },
+            {
+              "type": "StrProperty",
+              "name": "ChallengeDescription",
+              "unknown": "30",
+              "value": "Make 100 purchases at shops in a single run"
+            },
+            {
+              "type": "IntProperty",
+              "name": "ChallengeProgress",
+              "value": 1
+            },
+            {
+              "type": "IntProperty",
+              "name": "ChallengeGoal",
+              "value": 1
+            },
+            {
+              "type": "BoolProperty",
+              "name": "bChallengeCompleted",
+              "value": true
+            },
+            {
+              "type": "StructProperty",
+              "name": "CosmeticReward",
+              "subtype": "CrabCosmetic",
+              "value": [
+                {
+                  "type": "EnumProperty",
+                  "name": "CosmeticType",
+                  "enum": "ECrabCosmeticType",
+                  "value": "ECrabCosmeticType::CrabSkin"
+                },
+                {
+                  "type": "StrProperty",
+                  "name": "CosmeticName",
+                  "unknown": "0b",
+                  "value": "Orange"
+                },
+                {
+                  "type": "ObjectProperty",
+                  "name": "CosmeticIcon",
+                  "value": "/Game/UI/Thumbnail/T_Thumbnail_Orange.T_Thumbnail_Orange"
+                },
+                {
+                  "type": "ObjectProperty",
+                  "name": "CosmeticObject",
+                  "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Orange.MI_Orange"
+                },
+                {
+                  "type": "NoneProperty"
+                }
+              ]
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "NameProperty",
+              "name": "ChallengeID",
+              "unknown": "0d",
+              "value": "ACH_TANK"
+            },
+            {
+              "type": "StrProperty",
+              "name": "ChallengeDescription",
+              "unknown": "29",
+              "value": "Get 10000 max health on a single run"
+            },
+            {
+              "type": "IntProperty",
+              "name": "ChallengeProgress",
+              "value": 1
+            },
+            {
+              "type": "IntProperty",
+              "name": "ChallengeGoal",
+              "value": 1
+            },
+            {
+              "type": "BoolProperty",
+              "name": "bChallengeCompleted",
+              "value": true
+            },
+            {
+              "type": "StructProperty",
+              "name": "CosmeticReward",
+              "subtype": "CrabCosmetic",
+              "value": [
+                {
+                  "type": "EnumProperty",
+                  "name": "CosmeticType",
+                  "enum": "ECrabCosmeticType",
+                  "value": "ECrabCosmeticType::CrabSkin"
+                },
+                {
+                  "type": "StrProperty",
+                  "name": "CosmeticName",
+                  "unknown": "09",
+                  "value": "Snow"
+                },
+                {
+                  "type": "ObjectProperty",
+                  "name": "CosmeticIcon",
+                  "value": "/Game/UI/Thumbnail/T_Thumbnail_Snow.T_Thumbnail_Snow"
+                },
+                {
+                  "type": "ObjectProperty",
+                  "name": "CosmeticObject",
+                  "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Snow.MI_Snow"
+                },
+                {
+                  "type": "NoneProperty"
+                }
+              ]
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "NameProperty",
+              "name": "ChallengeID",
+              "unknown": "11",
+              "value": "ACH_MARATHON"
+            },
+            {
+              "type": "StrProperty",
+              "name": "ChallengeDescription",
+              "unknown": "1d",
+              "value": "Survive until island 100"
+            },
+            {
+              "type": "IntProperty",
+              "name": "ChallengeProgress",
+              "value": 1
+            },
+            {
+              "type": "IntProperty",
+              "name": "ChallengeGoal",
+              "value": 1
+            },
+            {
+              "type": "BoolProperty",
+              "name": "bChallengeCompleted",
+              "value": true
+            },
+            {
+              "type": "StructProperty",
+              "name": "CosmeticReward",
+              "subtype": "CrabCosmetic",
+              "value": [
+                {
+                  "type": "EnumProperty",
+                  "name": "CosmeticType",
+                  "enum": "ECrabCosmeticType",
+                  "value": "ECrabCosmeticType::CrabSkin"
+                },
+                {
+                  "type": "StrProperty",
+                  "name": "CosmeticName",
+                  "unknown": "09",
+                  "value": "Aqua"
+                },
+                {
+                  "type": "ObjectProperty",
+                  "name": "CosmeticIcon",
+                  "value": "/Game/UI/Thumbnail/T_Thumbnail_Aqua.T_Thumbnail_Aqua"
+                },
+                {
+                  "type": "ObjectProperty",
+                  "name": "CosmeticObject",
+                  "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Aqua.MI_Aqua"
+                },
+                {
+                  "type": "NoneProperty"
+                }
+              ]
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "NameProperty",
+              "name": "ChallengeID",
+              "unknown": "1b",
+              "value": "ACH_PLAYING_WITH_POWER"
+            },
+            {
+              "type": "StrProperty",
+              "name": "ChallengeDescription",
+              "unknown": "37",
+              "value": "Level up a mod or perk to level 20 in a single run"
+            },
+            {
+              "type": "IntProperty",
+              "name": "ChallengeProgress",
+              "value": 1
+            },
+            {
+              "type": "IntProperty",
+              "name": "ChallengeGoal",
+              "value": 1
+            },
+            {
+              "type": "BoolProperty",
+              "name": "bChallengeCompleted",
+              "value": true
+            },
+            {
+              "type": "StructProperty",
+              "name": "CosmeticReward",
+              "subtype": "CrabCosmetic",
+              "value": [
+                {
+                  "type": "EnumProperty",
+                  "name": "CosmeticType",
+                  "enum": "ECrabCosmeticType",
+                  "value": "ECrabCosmeticType::CrabSkin"
+                },
+                {
+                  "type": "StrProperty",
+                  "name": "CosmeticName",
+                  "unknown": "0c",
+                  "value": "Cheetah"
+                },
+                {
+                  "type": "ObjectProperty",
+                  "name": "CosmeticIcon",
+                  "value": "/Game/UI/Thumbnail/T_Thumbnail_Cheetah.T_Thumbnail_Cheetah"
+                },
+                {
+                  "type": "ObjectProperty",
+                  "name": "CosmeticObject",
+                  "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Cheetah.MI_Cheetah"
+                },
+                {
+                  "type": "NoneProperty"
+                }
+              ]
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "NameProperty",
+              "name": "ChallengeID",
+              "unknown": "0f",
+              "value": "ACH_ROLLER"
+            },
+            {
+              "type": "StrProperty",
+              "name": "ChallengeDescription",
+              "unknown": "2a",
+              "value": "Reroll shops 50 times in a single run"
+            },
+            {
+              "type": "IntProperty",
+              "name": "ChallengeProgress",
+              "value": 1
+            },
+            {
+              "type": "IntProperty",
+              "name": "ChallengeGoal",
+              "value": 1
+            },
+            {
+              "type": "BoolProperty",
+              "name": "bChallengeCompleted",
+              "value": true
+            },
+            {
+              "type": "StructProperty",
+              "name": "CosmeticReward",
+              "subtype": "CrabCosmetic",
+              "value": [
+                {
+                  "type": "EnumProperty",
+                  "name": "CosmeticType",
+                  "enum": "ECrabCosmeticType",
+                  "value": "ECrabCosmeticType::CrabSkin"
+                },
+                {
+                  "type": "StrProperty",
+                  "name": "CosmeticName",
+                  "unknown": "09",
+                  "value": "Pink"
+                },
+                {
+                  "type": "ObjectProperty",
+                  "name": "CosmeticIcon",
+                  "value": "/Game/UI/Thumbnail/T_Thumbnail_Pink.T_Thumbnail_Pink"
+                },
+                {
+                  "type": "ObjectProperty",
+                  "name": "CosmeticObject",
+                  "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Pink.MI_Pink"
+                },
+                {
+                  "type": "NoneProperty"
+                }
+              ]
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "NameProperty",
+              "name": "ChallengeID",
+              "unknown": "11",
+              "value": "ACH_RECYCLER"
+            },
+            {
+              "type": "StrProperty",
+              "name": "ChallengeDescription",
+              "unknown": "28",
+              "value": "Salvage 100 pickups in a single run"
+            },
+            {
+              "type": "IntProperty",
+              "name": "ChallengeProgress",
+              "value": 1
+            },
+            {
+              "type": "IntProperty",
+              "name": "ChallengeGoal",
+              "value": 1
+            },
+            {
+              "type": "BoolProperty",
+              "name": "bChallengeCompleted",
+              "value": true
+            },
+            {
+              "type": "StructProperty",
+              "name": "CosmeticReward",
+              "subtype": "CrabCosmetic",
+              "value": [
+                {
+                  "type": "EnumProperty",
+                  "name": "CosmeticType",
+                  "enum": "ECrabCosmeticType",
+                  "value": "ECrabCosmeticType::CrabSkin"
+                },
+                {
+                  "type": "StrProperty",
+                  "name": "CosmeticName",
+                  "unknown": "0e",
+                  "value": "Geometric"
+                },
+                {
+                  "type": "ObjectProperty",
+                  "name": "CosmeticIcon",
+                  "value": "/Game/UI/Thumbnail/T_Thumbnail_Geometric.T_Thumbnail_Geometric"
+                },
+                {
+                  "type": "ObjectProperty",
+                  "name": "CosmeticObject",
+                  "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Geometric.MI_Geometric"
+                },
+                {
+                  "type": "NoneProperty"
+                }
+              ]
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "NameProperty",
+              "name": "ChallengeID",
+              "unknown": "0f",
+              "value": "ACH_VANDAL"
+            },
+            {
+              "type": "StrProperty",
+              "name": "ChallengeDescription",
+              "unknown": "26",
+              "value": "Destroy 25 totems in a single run"
+            },
+            {
+              "type": "IntProperty",
+              "name": "ChallengeProgress",
+              "value": 1
+            },
+            {
+              "type": "IntProperty",
+              "name": "ChallengeGoal",
+              "value": 1
+            },
+            {
+              "type": "BoolProperty",
+              "name": "bChallengeCompleted",
+              "value": true
+            },
+            {
+              "type": "StructProperty",
+              "name": "CosmeticReward",
+              "subtype": "CrabCosmetic",
+              "value": [
+                {
+                  "type": "EnumProperty",
+                  "name": "CosmeticType",
+                  "enum": "ECrabCosmeticType",
+                  "value": "ECrabCosmeticType::CrabSkin"
+                },
+                {
+                  "type": "StrProperty",
+                  "name": "CosmeticName",
+                  "unknown": "09",
+                  "value": "Aqua"
+                },
+                {
+                  "type": "ObjectProperty",
+                  "name": "CosmeticIcon",
+                  "value": "/Game/UI/Thumbnail/T_Thumbnail_Aqua.T_Thumbnail_Aqua"
+                },
+                {
+                  "type": "ObjectProperty",
+                  "name": "CosmeticObject",
+                  "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Aqua.MI_Aqua"
+                },
+                {
+                  "type": "NoneProperty"
+                }
+              ]
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ],
+          [
+            {
+              "type": "NameProperty",
+              "name": "ChallengeID",
+              "unknown": "13",
+              "value": "ACH_SOLID_GOLD"
+            },
+            {
+              "type": "StrProperty",
+              "name": "ChallengeDescription",
+              "unknown": "38",
+              "value": "Fill 20 weapon mod slots with legendary weapon mods"
+            },
+            {
+              "type": "IntProperty",
+              "name": "ChallengeProgress",
+              "value": 1
+            },
+            {
+              "type": "IntProperty",
+              "name": "ChallengeGoal",
+              "value": 1
+            },
+            {
+              "type": "BoolProperty",
+              "name": "bChallengeCompleted",
+              "value": true
+            },
+            {
+              "type": "StructProperty",
+              "name": "CosmeticReward",
+              "subtype": "CrabCosmetic",
+              "value": [
+                {
+                  "type": "EnumProperty",
+                  "name": "CosmeticType",
+                  "enum": "ECrabCosmeticType",
+                  "value": "ECrabCosmeticType::CrabSkin"
+                },
+                {
+                  "type": "StrProperty",
+                  "name": "CosmeticName",
+                  "unknown": "09",
+                  "value": "Aqua"
+                },
+                {
+                  "type": "ObjectProperty",
+                  "name": "CosmeticIcon",
+                  "value": "/Game/UI/Thumbnail/T_Thumbnail_Aqua.T_Thumbnail_Aqua"
+                },
+                {
+                  "type": "ObjectProperty",
+                  "name": "CosmeticObject",
+                  "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Aqua.MI_Aqua"
+                },
+                {
+                  "type": "NoneProperty"
+                }
+              ]
+            },
+            {
+              "type": "NoneProperty"
+            }
+          ]
+        ]
+      },
+      {
+        "type": "NoneProperty"
+      }
+    ]
+  },
+  {
+    "type": "FileEndProperty"
+  }
+]
