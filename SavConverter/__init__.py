@@ -1,2 +1,2 @@
 from .SavToJson import sav_to_json
-from .SavReader import SavReader
+from .SavReader import read_sav
