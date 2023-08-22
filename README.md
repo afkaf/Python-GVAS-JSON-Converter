@@ -15,5 +15,3 @@ Python-GVAS-JSON-Converter is a tool designed to convert Unreal Engine's Game Va
 - **Convert back to .sav**: Work is underway to enable the conversion of JSON files back to the original `.sav` format.
 
 ---
-
-Feel free to modify this template to include additional details, examples, or any other information that you'd like to include in your README file. Let me know if you need further assistance!
