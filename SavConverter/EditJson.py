@@ -56,10 +56,10 @@ def replace_object_by_path(data, path, new_object):
                     parent_obj[i] = new_object
                     break
 
-def update_property_by_path(data, path, key_to_update, new_value):
-    obj = get_object_by_path(data, path)
+def update_property_by_path(data, path, new_value):
+    obj, key = get_object_by_path(data, path[:-1]), path[-1]
     if obj is not None and isinstance(obj, dict):
-        obj[key_to_update] = new_value
+        obj[key] = new_value
 
 def print_json(data):
     import json

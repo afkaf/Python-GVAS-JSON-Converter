@@ -5,7 +5,7 @@ from SavConverter import load_json, obj_to_json, print_json, get_object_by_path,
 
 # The following lines are an example of the .sav to .json conversion process
 # Get .sav property classes
-properties = read_sav('ExampleSavFiles/SaveSlot_without_AutoSave.sav')
+properties = read_sav('ExampleSavFiles/SaveSlot_with_AutoSave.sav')
 
 # Convert properties to json
 output = sav_to_json(properties)
@@ -23,11 +23,8 @@ data = load_json('SaveSlot.json')
 # path to the first Weapon object (0) in the list of Weapon objects ('value') in the RankedWeapons object ({"name": "RankedWeapons"})
 path_to_find = [{"name": "RankedWeapons"}, "value", 0]
 
-# path to the Rank object ({'name':'Rank'}) within that first weapon object
-path_to_update = [{"name": "RankedWeapons"}, "value", 0, {'name':'Rank'}]
-
-# key within the Rank object to update
-key_to_update = "value"
+# Full path to the value ('value') in Rank object ({'name':'Rank'}) within that first weapon object
+path_to_update = [{"name": "RankedWeapons"}, "value", 0, {'name':'Rank'}, 'value']
 
 # new value for the 'value' key in the Rank object
 new_value = 'ECrabRank::Gold'
@@ -38,7 +35,7 @@ print("Found first Weapon object:")
 print_json(obj)
 
 # update the value property of the Rank object
-update_property_by_path(data, path_to_update, key_to_update, new_value)
+update_property_by_path(data, path_to_update, new_value)
 print("\nUpdated Rank object value:")
 print_json(get_object_by_path(data, path_to_find))
 
