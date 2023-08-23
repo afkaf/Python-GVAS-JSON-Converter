@@ -50,7 +50,7 @@ The JSON editing functions allow users to navigate and manipulate the JSON struc
 
 ### **Updating Properties**
 
-- `update_property_by_path(data, path, key_to_update, new_value)`: Modify specific keys within an object at the given path.
+- `update_property_by_path(data, path, new_value)`: Modify specific keys within an object at the given full path to the property.
 
 ### **Loading JSON**
 
@@ -73,7 +73,7 @@ The JSON editing functions allow users to navigate and manipulate the JSON struc
 
 Example path:
 ```python
-path_to_find = [{"name": "RankedWeapons"}, "value", 0, {'name': 'Rank'}]
+path_to_find = [{"name": "RankedWeapons"}, "value", 0, {'name': 'Rank'}, 'value']
 ```
 Let's break down the example path `path_to_find = [{"name": "RankedWeapons"}, "value", 0, {'name':'Rank'}]`:
 
@@ -81,6 +81,7 @@ Let's break down the example path `path_to_find = [{"name": "RankedWeapons"}, "v
 - `"value"`: Inside the found object, look for the key `"value"`.
 - `0`: Inside the value, look for the first element in the list (index `0`).
 - `{'name':'Rank'}`: Look for an object within that element with a key `"name"` and a value `"Rank"`.
+- `"value"`: Inside the found object, for for the key `"value"`.
 
 This path leads you directly to a specific part of the JSON structure
 
