@@ -442,6 +442,10 @@ class ArrayProperty:
             # Read the number of ObjectProperty elements in the array
             content_count = sav_reader.read_uint32()
             self.value = [sav_reader.read_string() for _ in range(content_count)]
+        elif self.subtype == "EnumProperty":
+            # New code for EnumProperty
+            content_count = sav_reader.read_uint32()
+            self.value = [sav_reader.read_string() for _ in range(content_count)]
         else:
             self.value = sav_reader.read_bytes(content_size)
 
@@ -482,6 +486,16 @@ class ArrayProperty:
             content_size = len(byte_array_content) + 4 #+ len(self.name) + 1 + 4 + len(self.subtype) + 1)
 
 
+            return (write_string(self.name) + write_string(self.type) + write_uint32(content_size) +
+                    ArrayProperty.padding + write_string(self.subtype) + bytes([0x00]) +
+                    write_uint32(content_count) + byte_array_content)
+        elif self.subtype == "EnumProperty":
+            content_count = len(self.value)
+            byte_array_content = bytearray()
+            for value in self.value:
+                byte_array_content += write_string(value)  # Assuming write_string writes a string as bytes
+
+            content_size = len(byte_array_content) + 4
             return (write_string(self.name) + write_string(self.type) + write_uint32(content_size) +
                     ArrayProperty.padding + write_string(self.subtype) + bytes([0x00]) +
                     write_uint32(content_count) + byte_array_content)
@@ -622,7 +636,7 @@ class ObjectProperty:
     def __init__(self, name, sav_reader):
         self.type = "ObjectProperty"
         self.name = name
-        sav_reader.read_uint32()  # contentSize
+        content_size = sav_reader.read_uint32()  # contentSize
         sav_reader.read_bytes(len(ObjectProperty.padding))
         self.value = sav_reader.read_string()
 
@@ -633,8 +647,7 @@ class ObjectProperty:
         return instance
 
     def to_bytes(self):
-        content_size = 4 + len(self.value) + 1
-        return (write_string(self.name) + write_string(self.type) + write_uint32(content_size) +
+        return (write_string(self.name) + write_string(self.type) + write_uint32(len(self.value) + 5) +
                 ObjectProperty.padding + write_string(self.value))
 
 
