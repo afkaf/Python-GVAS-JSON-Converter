@@ -76,6 +76,6 @@ Example path:
 path_to_find = [{"name": "RankedWeapons"}, "value", 0, {'name': 'Rank'}]
 ```
 
-An usage example for all of these functions can be seen in [Example.py](Example.py). You can simply download the zip file, extract it, and run the example.
+A usage example for all of these functions can be seen in [Example.py](Example.py). You can simply download the zip file, extract it, and run the example.
 
 ---
