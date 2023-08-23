@@ -5,7 +5,7 @@ from SavConverter import load_json, obj_to_json, print_json, get_object_by_path,
 
 # The following lines are an example of the .sav to .json conversion process
 # Get .sav property classes
-properties = read_sav('ExampleSavFiles/SaveSlot_with_AutoSave.sav')
+properties = read_sav('ExampleSavFiles/SaveSlot_without_AutoSave.sav')
 
 # Convert properties to json
 output = sav_to_json(properties)
