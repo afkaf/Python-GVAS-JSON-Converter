@@ -75,7 +75,7 @@ Example path:
 ```python
 path_to_find = [{"name": "RankedWeapons"}, "value", 0, {'name': 'Rank'}, 'value']
 ```
-Let's break down the example path `path_to_find = [{"name": "RankedWeapons"}, "value", 0, {'name':'Rank'}]`:
+Let's break down the example path:
 
 - `{"name": "RankedWeapons"}`: Look for an object with a key `"name"` and a value `"RankedWeapons"`.
 - `"value"`: Inside the found object, look for the key `"value"`.
