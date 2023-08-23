@@ -1,0 +1,1877 @@
+{
+  "type": "StructProperty",
+  "name": "AutoSave",
+  "subtype": "CrabAutoSave",
+  "value": [
+    {
+      "type": "IntProperty",
+      "name": "CurrentTime",
+      "value": 30016
+    },
+    {
+      "type": "ArrayProperty",
+      "name": "DifficultyModifiers",
+      "subtype": "EnumProperty",
+      "value": "01000000250000004543726162446966666963756c74794d6f6469666965723a3a4e6f5361666574794e657400"
+    },
+    {
+      "type": "StructProperty",
+      "name": "NextIslandInfo",
+      "subtype": "CrabNextIslandInfo",
+      "value": [
+        {
+          "type": "EnumProperty",
+          "name": "Biome",
+          "enum": "ECrabBiome",
+          "value": "ECrabBiome::Volcanic"
+        },
+        {
+          "type": "IntProperty",
+          "name": "CurrentIsland",
+          "value": 206
+        },
+        {
+          "type": "NameProperty",
+          "name": "IslandName",
+          "unknown": "16",
+          "value": "Volcanic_Arena_01"
+        },
+        {
+          "type": "EnumProperty",
+          "name": "IslandType",
+          "enum": "ECrabIslandType",
+          "value": "ECrabIslandType::Arena"
+        },
+        {
+          "type": "EnumProperty",
+          "name": "RewardLootPool",
+          "enum": "ECrabLootPool",
+          "value": "ECrabLootPool::Damage"
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ]
+    },
+    {
+      "type": "IntProperty",
+      "name": "Points",
+      "value": 89359
+    },
+    {
+      "type": "IntProperty",
+      "name": "ComboCounter",
+      "value": 5752
+    },
+    {
+      "type": "FloatProperty",
+      "name": "Combo",
+      "value": 5.0
+    },
+    {
+      "type": "IntProperty",
+      "name": "Eliminations",
+      "value": 8585
+    },
+    {
+      "type": "IntProperty",
+      "name": "ShotsFired",
+      "value": 117154
+    },
+    {
+      "type": "IntProperty",
+      "name": "DamageDealt",
+      "value": 616533362
+    },
+    {
+      "type": "IntProperty",
+      "name": "HighestDamageDealt",
+      "value": 23973576
+    },
+    {
+      "type": "IntProperty",
+      "name": "DamageTaken",
+      "value": 268070
+    },
+    {
+      "type": "IntProperty",
+      "name": "NumFlawlessIslands",
+      "value": 75
+    },
+    {
+      "type": "StructProperty",
+      "name": "HealthInfo",
+      "subtype": "CrabHealthInfo",
+      "value": [
+        {
+          "type": "IntProperty",
+          "name": "CurrentArmorPlates",
+          "value": 6
+        },
+        {
+          "type": "FloatProperty",
+          "name": "CurrentArmorPlateHealth",
+          "value": 292468.9375
+        },
+        {
+          "type": "FloatProperty",
+          "name": "PreviousArmorPlateHealth",
+          "value": 277620.78125
+        },
+        {
+          "type": "FloatProperty",
+          "name": "CurrentHealth",
+          "value": 1225075.75
+        },
+        {
+          "type": "FloatProperty",
+          "name": "CurrentMaxHealth",
+          "value": 1225075.75
+        },
+        {
+          "type": "FloatProperty",
+          "name": "PreviousHealth",
+          "value": 1211275.75
+        },
+        {
+          "type": "FloatProperty",
+          "name": "PreviousMaxHealth",
+          "value": 1225075.75
+        },
+        {
+          "type": "NoneProperty"
+        }
+      ]
+    },
+    {
+      "type": "FloatProperty",
+      "name": "HealthMultiplier",
+      "value": 1.0
+    },
+    {
+      "type": "FloatProperty",
+      "name": "DamageMultiplier",
+      "value": 138.81991577148438
+    },
+    {
+      "type": "ObjectProperty",
+      "name": "WeaponDA",
+      "value": "/Game/Blueprint/Weapon/Minigun/DA_Weapon_Minigun.DA_Weapon_Minigun"
+    },
+    {
+      "type": "ByteProperty",
+      "name": "NumWeaponModSlots",
+      "subtype": "None",
+      "value": "18"
+    },
+    {
+      "type": "ArrayProperty",
+      "name": "WeaponMods",
+      "subtype": "StructProperty",
+      "generic_type": "CrabWeaponMod",
+      "value": [
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_PiercingShot.DA_WeaponMod_PiercingShot"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "21"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_SparkShot.DA_WeaponMod_SparkShot"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "2d"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Epic/DA_WeaponMod_DamageShot.DA_WeaponMod_DamageShot"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "35"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_PoisonStorm.DA_WeaponMod_PoisonStorm"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "0e"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_SquareShot.DA_WeaponMod_SquareShot"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "18"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_ProximityBarrage.DA_WeaponMod_ProximityBarrage"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "12"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_CriticalBlades.DA_WeaponMod_CriticalBlades"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "19"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_LandmineShot.DA_WeaponMod_LandmineShot"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "0c"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_TorpedoShot.DA_WeaponMod_TorpedoShot"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "09"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_SpikeStrike.DA_WeaponMod_SpikeStrike"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "0b"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_FireballShot.DA_WeaponMod_FireballShot"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "06"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_FireStorm.DA_WeaponMod_FireStorm"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "0c"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_SharpenedAxe.DA_WeaponMod_SharpenedAxe"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "0b"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_IceStorm.DA_WeaponMod_IceStorm"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "08"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_LightningStrike.DA_WeaponMod_LightningStrike"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "09"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_IceStrike.DA_WeaponMod_IceStrike"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "07"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_BombShot.DA_WeaponMod_BombShot"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "0a"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_SporeShot.DA_WeaponMod_SporeShot"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "0d"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_XShot.DA_WeaponMod_XShot"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "0b"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_SplashDamage.DA_WeaponMod_SplashDamage"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "07"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_TriangleShot.DA_WeaponMod_TriangleShot"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "08"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_Firepower.DA_WeaponMod_Firepower"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "08"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_PoisonStrike.DA_WeaponMod_PoisonStrike"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "05"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "WeaponModDA",
+            "value": "/Game/Blueprint/Pickup/WeaponMod/Legendary/DA_WeaponMod_DoubleTap.DA_WeaponMod_DoubleTap"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "11"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "ByteProperty",
+      "name": "NumGrenadeModSlots",
+      "subtype": "None",
+      "value": "18"
+    },
+    {
+      "type": "ArrayProperty",
+      "name": "GrenadeMods",
+      "subtype": "StructProperty",
+      "generic_type": "CrabGrenadeMod",
+      "value": [
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "GrenadeModDA",
+            "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_UltraMushroom.DA_GrenadeMod_UltraMushroom"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "10"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "GrenadeModDA",
+            "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_BombExplosion.DA_GrenadeMod_BombExplosion"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "12"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "GrenadeModDA",
+            "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_PoisonExplosion.DA_GrenadeMod_PoisonExplosion"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "13"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "GrenadeModDA",
+            "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_EnergyRing.DA_GrenadeMod_EnergyRing"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "0f"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "GrenadeModDA",
+            "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_LightningExplosion.DA_GrenadeMod_LightningExplosion"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "11"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "GrenadeModDA",
+            "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_SpinningBlade.DA_GrenadeMod_SpinningBlade"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "12"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "GrenadeModDA",
+            "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_HomingGrenade.DA_GrenadeMod_HomingGrenade"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "0e"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "GrenadeModDA",
+            "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_IceExplosion.DA_GrenadeMod_IceExplosion"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "0f"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "GrenadeModDA",
+            "value": "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_LayeredGrenade.DA_GrenadeMod_LayeredGrenade"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "12"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "GrenadeModDA",
+            "value": "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_SparkExplosion.DA_GrenadeMod_SparkExplosion"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "20"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "GrenadeModDA",
+            "value": "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_DamageGrenade.DA_GrenadeMod_DamageGrenade"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "2c"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "GrenadeModDA",
+            "value": "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_ThornExplosion.DA_GrenadeMod_ThornExplosion"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "27"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "GrenadeModDA",
+            "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_FireExplosion.DA_GrenadeMod_FireExplosion"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "10"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "GrenadeModDA",
+            "value": "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_BubbleBlast.DA_GrenadeMod_BubbleBlast"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "21"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "GrenadeModDA",
+            "value": "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_FireworkExplosion.DA_GrenadeMod_FireworkExplosion"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "21"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "GrenadeModDA",
+            "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_BlackHole.DA_GrenadeMod_BlackHole"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "0e"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "GrenadeModDA",
+            "value": "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_DaggerBlast.DA_GrenadeMod_DaggerBlast"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "1d"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "GrenadeModDA",
+            "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_CloneExplosion.DA_GrenadeMod_CloneExplosion"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "0e"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "GrenadeModDA",
+            "value": "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_AuraGrenade.DA_GrenadeMod_AuraGrenade"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "1b"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "GrenadeModDA",
+            "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_CrystalBarrage.DA_GrenadeMod_CrystalBarrage"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "0b"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "GrenadeModDA",
+            "value": "/Game/Blueprint/Pickup/GrenadeMod/Epic/DA_GrenadeMod_Grenadier.DA_GrenadeMod_Grenadier"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "11"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "GrenadeModDA",
+            "value": "/Game/Blueprint/Pickup/GrenadeMod/Legendary/DA_GrenadeMod_SporeExplosion.DA_GrenadeMod_SporeExplosion"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "0d"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "ByteProperty",
+      "name": "NumPerkSlots",
+      "subtype": "None",
+      "value": "18"
+    },
+    {
+      "type": "ArrayProperty",
+      "name": "Perks",
+      "subtype": "StructProperty",
+      "generic_type": "CrabPerk",
+      "value": [
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_BonusCrystals.DA_Perk_BonusCrystals"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "26"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_HardTarget.DA_Perk_HardTarget"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "55"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Greed/DA_Perk_LimitedLoot.DA_Perk_LimitedLoot"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "05"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_SpecialDelivery.DA_Perk_SpecialDelivery"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "41"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_Checklist.DA_Perk_Checklist"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "36"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_Assassin.DA_Perk_Assassin"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "33"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_GoldDice.DA_Perk_GoldDice"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "1a"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_Bulletproof.DA_Perk_Bulletproof"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "1d"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_TastyOrange.DA_Perk_TastyOrange"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "34"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_BigHearts.DA_Perk_BigHearts"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "44"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_BigChests.DA_Perk_BigChests"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "21"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_StreamerLoot.DA_Perk_StreamerLoot"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "29"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_Gemstone.DA_Perk_Gemstone"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "37"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_Clearance.DA_Perk_Clearance"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "11"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Rare/DA_Perk_TonysBlackCard.DA_Perk_TonysBlackCard"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "3a"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_MoneyIsPower.DA_Perk_MoneyIsPower"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "1c"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_RegeneratingArmor.DA_Perk_RegeneratingArmor"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "17"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_FaultyChests.DA_Perk_FaultyChests"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "18"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_MortarTurret.DA_Perk_MortarTurret"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "15"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_RareTreasure.DA_Perk_RareTreasure"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "15"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Epic/DA_Perk_PoisonAura.DA_Perk_PoisonAura"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "1a"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_FireTurret.DA_Perk_FireTurret"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "13"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_DoubleVision.DA_Perk_DoubleVision"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "12"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "ObjectProperty",
+            "name": "PerkDA",
+            "value": "/Game/Blueprint/Pickup/Perk/Legendary/DA_Perk_LevelUp.DA_Perk_LevelUp"
+          },
+          {
+            "type": "ByteProperty",
+            "name": "Level",
+            "subtype": "None",
+            "value": "0b"
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "IntProperty",
+      "name": "NumTimesSalvaged",
+      "value": 1373
+    },
+    {
+      "type": "IntProperty",
+      "name": "NumShopPurchases",
+      "value": 1097
+    },
+    {
+      "type": "IntProperty",
+      "name": "NumShopRerolls",
+      "value": 96
+    },
+    {
+      "type": "IntProperty",
+      "name": "NumTotemsDestroyed",
+      "value": 33
+    },
+    {
+      "type": "UInt32Property",
+      "name": "Crystals",
+      "value": 2147483647
+    },
+    {
+      "type": "IntProperty",
+      "name": "TotalTimeTaken",
+      "value": 29433
+    },
+    {
+      "type": "ArrayProperty",
+      "name": "CompletedChallenges",
+      "subtype": "StructProperty",
+      "generic_type": "CrabChallenge",
+      "value": [
+        [
+          {
+            "type": "NameProperty",
+            "name": "ChallengeID",
+            "unknown": "14",
+            "value": "ACH_BIG_SPENDER"
+          },
+          {
+            "type": "StrProperty",
+            "name": "ChallengeDescription",
+            "unknown": "30",
+            "value": "Make 100 purchases at shops in a single run"
+          },
+          {
+            "type": "IntProperty",
+            "name": "ChallengeProgress",
+            "value": 1
+          },
+          {
+            "type": "IntProperty",
+            "name": "ChallengeGoal",
+            "value": 1
+          },
+          {
+            "type": "BoolProperty",
+            "name": "bChallengeCompleted",
+            "value": true
+          },
+          {
+            "type": "StructProperty",
+            "name": "CosmeticReward",
+            "subtype": "CrabCosmetic",
+            "value": [
+              {
+                "type": "EnumProperty",
+                "name": "CosmeticType",
+                "enum": "ECrabCosmeticType",
+                "value": "ECrabCosmeticType::CrabSkin"
+              },
+              {
+                "type": "StrProperty",
+                "name": "CosmeticName",
+                "unknown": "0b",
+                "value": "Orange"
+              },
+              {
+                "type": "ObjectProperty",
+                "name": "CosmeticIcon",
+                "value": "/Game/UI/Thumbnail/T_Thumbnail_Orange.T_Thumbnail_Orange"
+              },
+              {
+                "type": "ObjectProperty",
+                "name": "CosmeticObject",
+                "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Orange.MI_Orange"
+              },
+              {
+                "type": "NoneProperty"
+              }
+            ]
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "NameProperty",
+            "name": "ChallengeID",
+            "unknown": "0d",
+            "value": "ACH_TANK"
+          },
+          {
+            "type": "StrProperty",
+            "name": "ChallengeDescription",
+            "unknown": "29",
+            "value": "Get 10000 max health on a single run"
+          },
+          {
+            "type": "IntProperty",
+            "name": "ChallengeProgress",
+            "value": 1
+          },
+          {
+            "type": "IntProperty",
+            "name": "ChallengeGoal",
+            "value": 1
+          },
+          {
+            "type": "BoolProperty",
+            "name": "bChallengeCompleted",
+            "value": true
+          },
+          {
+            "type": "StructProperty",
+            "name": "CosmeticReward",
+            "subtype": "CrabCosmetic",
+            "value": [
+              {
+                "type": "EnumProperty",
+                "name": "CosmeticType",
+                "enum": "ECrabCosmeticType",
+                "value": "ECrabCosmeticType::CrabSkin"
+              },
+              {
+                "type": "StrProperty",
+                "name": "CosmeticName",
+                "unknown": "09",
+                "value": "Snow"
+              },
+              {
+                "type": "ObjectProperty",
+                "name": "CosmeticIcon",
+                "value": "/Game/UI/Thumbnail/T_Thumbnail_Snow.T_Thumbnail_Snow"
+              },
+              {
+                "type": "ObjectProperty",
+                "name": "CosmeticObject",
+                "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Snow.MI_Snow"
+              },
+              {
+                "type": "NoneProperty"
+              }
+            ]
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "NameProperty",
+            "name": "ChallengeID",
+            "unknown": "11",
+            "value": "ACH_MARATHON"
+          },
+          {
+            "type": "StrProperty",
+            "name": "ChallengeDescription",
+            "unknown": "1d",
+            "value": "Survive until island 100"
+          },
+          {
+            "type": "IntProperty",
+            "name": "ChallengeProgress",
+            "value": 1
+          },
+          {
+            "type": "IntProperty",
+            "name": "ChallengeGoal",
+            "value": 1
+          },
+          {
+            "type": "BoolProperty",
+            "name": "bChallengeCompleted",
+            "value": true
+          },
+          {
+            "type": "StructProperty",
+            "name": "CosmeticReward",
+            "subtype": "CrabCosmetic",
+            "value": [
+              {
+                "type": "EnumProperty",
+                "name": "CosmeticType",
+                "enum": "ECrabCosmeticType",
+                "value": "ECrabCosmeticType::CrabSkin"
+              },
+              {
+                "type": "StrProperty",
+                "name": "CosmeticName",
+                "unknown": "09",
+                "value": "Aqua"
+              },
+              {
+                "type": "ObjectProperty",
+                "name": "CosmeticIcon",
+                "value": "/Game/UI/Thumbnail/T_Thumbnail_Aqua.T_Thumbnail_Aqua"
+              },
+              {
+                "type": "ObjectProperty",
+                "name": "CosmeticObject",
+                "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Aqua.MI_Aqua"
+              },
+              {
+                "type": "NoneProperty"
+              }
+            ]
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "NameProperty",
+            "name": "ChallengeID",
+            "unknown": "1b",
+            "value": "ACH_PLAYING_WITH_POWER"
+          },
+          {
+            "type": "StrProperty",
+            "name": "ChallengeDescription",
+            "unknown": "37",
+            "value": "Level up a mod or perk to level 20 in a single run"
+          },
+          {
+            "type": "IntProperty",
+            "name": "ChallengeProgress",
+            "value": 1
+          },
+          {
+            "type": "IntProperty",
+            "name": "ChallengeGoal",
+            "value": 1
+          },
+          {
+            "type": "BoolProperty",
+            "name": "bChallengeCompleted",
+            "value": true
+          },
+          {
+            "type": "StructProperty",
+            "name": "CosmeticReward",
+            "subtype": "CrabCosmetic",
+            "value": [
+              {
+                "type": "EnumProperty",
+                "name": "CosmeticType",
+                "enum": "ECrabCosmeticType",
+                "value": "ECrabCosmeticType::CrabSkin"
+              },
+              {
+                "type": "StrProperty",
+                "name": "CosmeticName",
+                "unknown": "0c",
+                "value": "Cheetah"
+              },
+              {
+                "type": "ObjectProperty",
+                "name": "CosmeticIcon",
+                "value": "/Game/UI/Thumbnail/T_Thumbnail_Cheetah.T_Thumbnail_Cheetah"
+              },
+              {
+                "type": "ObjectProperty",
+                "name": "CosmeticObject",
+                "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Cheetah.MI_Cheetah"
+              },
+              {
+                "type": "NoneProperty"
+              }
+            ]
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "NameProperty",
+            "name": "ChallengeID",
+            "unknown": "0f",
+            "value": "ACH_ROLLER"
+          },
+          {
+            "type": "StrProperty",
+            "name": "ChallengeDescription",
+            "unknown": "2a",
+            "value": "Reroll shops 50 times in a single run"
+          },
+          {
+            "type": "IntProperty",
+            "name": "ChallengeProgress",
+            "value": 1
+          },
+          {
+            "type": "IntProperty",
+            "name": "ChallengeGoal",
+            "value": 1
+          },
+          {
+            "type": "BoolProperty",
+            "name": "bChallengeCompleted",
+            "value": true
+          },
+          {
+            "type": "StructProperty",
+            "name": "CosmeticReward",
+            "subtype": "CrabCosmetic",
+            "value": [
+              {
+                "type": "EnumProperty",
+                "name": "CosmeticType",
+                "enum": "ECrabCosmeticType",
+                "value": "ECrabCosmeticType::CrabSkin"
+              },
+              {
+                "type": "StrProperty",
+                "name": "CosmeticName",
+                "unknown": "09",
+                "value": "Pink"
+              },
+              {
+                "type": "ObjectProperty",
+                "name": "CosmeticIcon",
+                "value": "/Game/UI/Thumbnail/T_Thumbnail_Pink.T_Thumbnail_Pink"
+              },
+              {
+                "type": "ObjectProperty",
+                "name": "CosmeticObject",
+                "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Pink.MI_Pink"
+              },
+              {
+                "type": "NoneProperty"
+              }
+            ]
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "NameProperty",
+            "name": "ChallengeID",
+            "unknown": "11",
+            "value": "ACH_RECYCLER"
+          },
+          {
+            "type": "StrProperty",
+            "name": "ChallengeDescription",
+            "unknown": "28",
+            "value": "Salvage 100 pickups in a single run"
+          },
+          {
+            "type": "IntProperty",
+            "name": "ChallengeProgress",
+            "value": 1
+          },
+          {
+            "type": "IntProperty",
+            "name": "ChallengeGoal",
+            "value": 1
+          },
+          {
+            "type": "BoolProperty",
+            "name": "bChallengeCompleted",
+            "value": true
+          },
+          {
+            "type": "StructProperty",
+            "name": "CosmeticReward",
+            "subtype": "CrabCosmetic",
+            "value": [
+              {
+                "type": "EnumProperty",
+                "name": "CosmeticType",
+                "enum": "ECrabCosmeticType",
+                "value": "ECrabCosmeticType::CrabSkin"
+              },
+              {
+                "type": "StrProperty",
+                "name": "CosmeticName",
+                "unknown": "0e",
+                "value": "Geometric"
+              },
+              {
+                "type": "ObjectProperty",
+                "name": "CosmeticIcon",
+                "value": "/Game/UI/Thumbnail/T_Thumbnail_Geometric.T_Thumbnail_Geometric"
+              },
+              {
+                "type": "ObjectProperty",
+                "name": "CosmeticObject",
+                "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Geometric.MI_Geometric"
+              },
+              {
+                "type": "NoneProperty"
+              }
+            ]
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "NameProperty",
+            "name": "ChallengeID",
+            "unknown": "0f",
+            "value": "ACH_VANDAL"
+          },
+          {
+            "type": "StrProperty",
+            "name": "ChallengeDescription",
+            "unknown": "26",
+            "value": "Destroy 25 totems in a single run"
+          },
+          {
+            "type": "IntProperty",
+            "name": "ChallengeProgress",
+            "value": 1
+          },
+          {
+            "type": "IntProperty",
+            "name": "ChallengeGoal",
+            "value": 1
+          },
+          {
+            "type": "BoolProperty",
+            "name": "bChallengeCompleted",
+            "value": true
+          },
+          {
+            "type": "StructProperty",
+            "name": "CosmeticReward",
+            "subtype": "CrabCosmetic",
+            "value": [
+              {
+                "type": "EnumProperty",
+                "name": "CosmeticType",
+                "enum": "ECrabCosmeticType",
+                "value": "ECrabCosmeticType::CrabSkin"
+              },
+              {
+                "type": "StrProperty",
+                "name": "CosmeticName",
+                "unknown": "09",
+                "value": "Aqua"
+              },
+              {
+                "type": "ObjectProperty",
+                "name": "CosmeticIcon",
+                "value": "/Game/UI/Thumbnail/T_Thumbnail_Aqua.T_Thumbnail_Aqua"
+              },
+              {
+                "type": "ObjectProperty",
+                "name": "CosmeticObject",
+                "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Aqua.MI_Aqua"
+              },
+              {
+                "type": "NoneProperty"
+              }
+            ]
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ],
+        [
+          {
+            "type": "NameProperty",
+            "name": "ChallengeID",
+            "unknown": "13",
+            "value": "ACH_SOLID_GOLD"
+          },
+          {
+            "type": "StrProperty",
+            "name": "ChallengeDescription",
+            "unknown": "38",
+            "value": "Fill 20 weapon mod slots with legendary weapon mods"
+          },
+          {
+            "type": "IntProperty",
+            "name": "ChallengeProgress",
+            "value": 1
+          },
+          {
+            "type": "IntProperty",
+            "name": "ChallengeGoal",
+            "value": 1
+          },
+          {
+            "type": "BoolProperty",
+            "name": "bChallengeCompleted",
+            "value": true
+          },
+          {
+            "type": "StructProperty",
+            "name": "CosmeticReward",
+            "subtype": "CrabCosmetic",
+            "value": [
+              {
+                "type": "EnumProperty",
+                "name": "CosmeticType",
+                "enum": "ECrabCosmeticType",
+                "value": "ECrabCosmeticType::CrabSkin"
+              },
+              {
+                "type": "StrProperty",
+                "name": "CosmeticName",
+                "unknown": "09",
+                "value": "Aqua"
+              },
+              {
+                "type": "ObjectProperty",
+                "name": "CosmeticIcon",
+                "value": "/Game/UI/Thumbnail/T_Thumbnail_Aqua.T_Thumbnail_Aqua"
+              },
+              {
+                "type": "ObjectProperty",
+                "name": "CosmeticObject",
+                "value": "/Game/Character/Crab/Texture/SkinPrototype/MI_Aqua.MI_Aqua"
+              },
+              {
+                "type": "NoneProperty"
+              }
+            ]
+          },
+          {
+            "type": "NoneProperty"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "NoneProperty"
+    }
+  ]
+}
