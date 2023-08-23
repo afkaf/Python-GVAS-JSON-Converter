@@ -34,23 +34,48 @@ The conversion functions provide an easy way to translate between Unreal Engine'
 
 ## Using JSON Editing Functions
 
-The JSON editing functions allow users to manipulate the JSON structure using paths, providing functions like:
+The JSON editing functions allow users to navigate and manipulate the JSON structure using paths, providing functions like:
 
-- **Finding Objects**: Using `get_object_by_path`, you can locate objects in JSON by specifying the path.
-- **Inserting Objects**: With `insert_object_by_path`, you can add new objects to specified locations.
-- **Replacing Objects**: `replace_object_by_path` enables object replacement at a specified path.
-- **Updating Properties**: Use `update_property_by_path` to modify specific keys within an object.
+### **Finding Objects**
+
+- `get_object_by_path(data, path)`: Locate objects in JSON by specifying the path. Returns the object found at the specified path or `None` if the path is not found.
+
+### **Inserting Objects**
+
+- `insert_object_by_path(data, path, new_object, position='after')`: Add a new object at the specified location. Use the `position` parameter to insert before or after the targeted object.
+
+### **Replacing Objects**
+
+- `replace_object_by_path(data, path, new_object)`: Replace an object at the specified path with a new object.
+
+### **Updating Properties**
+
+- `update_property_by_path(data, path, key_to_update, new_value)`: Modify specific keys within an object at the given path.
+
+### **Loading JSON**
+
+- `load_json(file_path)`: Load a JSON file from the specified file path.
+
+### **Converting Object to JSON String**
+
+- `obj_to_json(obj)`: Convert an object into a JSON string with proper indentation.
+
+### **Printing JSON**
+
+- `print_json(data)`: Print a JSON object with indentation for better readability.
 
 ### Understanding the Path Structure
 
 - `path`: A list that describes the path to the object you're looking for. Each element in the list can be:
-- **A dictionary**, to match a specific key-value pair.
-- **A string**, to reference a key.
-- **An integer**, to reference an index in a list.
+  - **A dictionary**, to match a specific key-value pair.
+  - **A string**, to reference a key.
+  - **An integer**, to reference an index in a list.
 
-For example:
+Example path:
 ```python
-path_to_find = [{"name": "RankedWeapons"}, "value", 0]
+path_to_find = [{"name": "RankedWeapons"}, "value", 0, {'name': 'Rank'}]
 ```
+
+An usage example for all of these functions can be seen in [Example.py](Example.py). You can simply download the zip file, extract it, and run the example.
 
 ---
