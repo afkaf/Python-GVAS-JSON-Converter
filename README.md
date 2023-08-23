@@ -75,6 +75,16 @@ Example path:
 ```python
 path_to_find = [{"name": "RankedWeapons"}, "value", 0, {'name': 'Rank'}]
 ```
+Let's break down the example path `path_to_find = [{"name": "RankedWeapons"}, "value", 0, {'name':'Rank'}]`:
+
+- `{"name": "RankedWeapons"}`: Look for an object with a key `"name"` and a value `"RankedWeapons"`.
+- `"value"`: Inside the found object, look for the key `"value"`.
+- `0`: Inside the value, look for the first element in the list (index `0`).
+- `{'name':'Rank'}`: Look for an object within that element with a key `"name"` and a value `"Rank"`.
+
+This path leads you directly to a specific part of the JSON structure
+
+## Example Code
 
 A usage example for all of these functions can be seen in [Example.py](Example.py). You can simply download the zip file, extract it, and run the example.
 
