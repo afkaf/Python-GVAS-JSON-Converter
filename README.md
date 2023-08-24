@@ -81,7 +81,7 @@ Let's break down the example path:
 - `"value"`: Inside the found object, look for the key `"value"`.
 - `0`: Inside the value, look for the first element in the list (index `0`).
 - `{'name':'Rank'}`: Look for an object within that element with a key `"name"` and a value `"Rank"`.
-- `"value"`: Inside the found object, for for the key `"value"`.
+- `"value"`: Inside the found object, look for the key `"value"`.
 
 This path leads you directly to a specific part of the JSON structure
 
