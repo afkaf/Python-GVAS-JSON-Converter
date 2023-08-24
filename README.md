@@ -8,7 +8,7 @@ Python-GVAS-JSON-Converter is a library designed to convert Unreal Engine's Game
 
 - **Convert from .sav to .json**: Supports converting Unreal Engine's `.sav` files into `.json` format.
 - **Convert from .json to .sav**: Includes the ability to convert `.json` files back to the original `.sav` format.
-- **JSON Editing Functions**: Offers a range of functions to navigate, manipulate, and modify JSON structures with ease.
+- **JSON Editing Functions**: Offers a range of functions to navigate, manipulate, and modify the specific JSON structure with ease.
 - **Tested Games**: The conversion has been tested with Crab Champions, and it may work for other games as well.
 - **Actively Developed**: This project is actively being developed, with new features and improvements being added.
 
