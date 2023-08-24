@@ -19,9 +19,12 @@ def to_json_structure(obj):
     # Handle other cases (e.g., built-in types)
     return str(obj)
 
-def sav_to_json(props):
+def sav_to_json(props, string=False):
     savJSON = []
     for prop in props:
         savJSON.append(to_json_structure(prop))
-    json_string = json.dumps(savJSON, indent=2)
-    return json_string
+    if string:
+        json_string = json.dumps(savJSON, indent=2)
+        return json_string
+    else:
+        return savJSON

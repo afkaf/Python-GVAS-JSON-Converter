@@ -8,7 +8,7 @@ from SavConverter import load_json, obj_to_json, print_json, get_object_by_path,
 properties = read_sav('ExampleSavFiles/SaveSlot_without_AutoSave.sav')
 
 # Convert properties to json
-output = sav_to_json(properties)
+output = sav_to_json(properties, string = True)
 
 # Write json string to file
 with open('SaveSlot.json', 'w') as json_file:
