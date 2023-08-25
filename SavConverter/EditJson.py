@@ -62,5 +62,4 @@ def update_property_by_path(data, path, new_value):
         obj[key] = new_value
 
 def print_json(data):
-    import json
-    print(json.dumps(data, indent=2))
+    print(obj_to_json(data))

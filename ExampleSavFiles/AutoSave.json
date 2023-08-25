@@ -12,7 +12,9 @@
       "type": "ArrayProperty",
       "name": "DifficultyModifiers",
       "subtype": "EnumProperty",
-      "value": "01000000250000004543726162446966666963756c74794d6f6469666965723a3a4e6f5361666574794e657400"
+      "value": [
+        "ECrabDifficultyModifier::NoSafetyNet"
+      ]
     },
     {
       "type": "StructProperty",
@@ -180,7 +182,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "21"
+            "value": 33
           },
           {
             "type": "NoneProperty"
@@ -196,7 +198,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "2d"
+            "value": 45
           },
           {
             "type": "NoneProperty"
@@ -212,7 +214,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "35"
+            "value": 53
           },
           {
             "type": "NoneProperty"
@@ -228,7 +230,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "0e"
+            "value": 14
           },
           {
             "type": "NoneProperty"
@@ -244,7 +246,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "18"
+            "value": 24
           },
           {
             "type": "NoneProperty"
@@ -260,7 +262,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "12"
+            "value": 18
           },
           {
             "type": "NoneProperty"
@@ -276,7 +278,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "19"
+            "value": 25
           },
           {
             "type": "NoneProperty"
@@ -292,7 +294,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "0c"
+            "value": 12
           },
           {
             "type": "NoneProperty"
@@ -308,7 +310,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "09"
+            "value": 9
           },
           {
             "type": "NoneProperty"
@@ -324,7 +326,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "0b"
+            "value": 11
           },
           {
             "type": "NoneProperty"
@@ -340,7 +342,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "06"
+            "value": 6
           },
           {
             "type": "NoneProperty"
@@ -356,7 +358,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "0c"
+            "value": 12
           },
           {
             "type": "NoneProperty"
@@ -372,7 +374,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "0b"
+            "value": 11
           },
           {
             "type": "NoneProperty"
@@ -388,7 +390,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "08"
+            "value": 8
           },
           {
             "type": "NoneProperty"
@@ -404,7 +406,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "09"
+            "value": 9
           },
           {
             "type": "NoneProperty"
@@ -420,7 +422,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "07"
+            "value": 7
           },
           {
             "type": "NoneProperty"
@@ -436,7 +438,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "0a"
+            "value": 10
           },
           {
             "type": "NoneProperty"
@@ -452,7 +454,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "0d"
+            "value": 13
           },
           {
             "type": "NoneProperty"
@@ -468,7 +470,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "0b"
+            "value": 11
           },
           {
             "type": "NoneProperty"
@@ -484,7 +486,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "07"
+            "value": 7
           },
           {
             "type": "NoneProperty"
@@ -500,7 +502,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "08"
+            "value": 8
           },
           {
             "type": "NoneProperty"
@@ -516,7 +518,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "08"
+            "value": 8
           },
           {
             "type": "NoneProperty"
@@ -532,7 +534,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "05"
+            "value": 5
           },
           {
             "type": "NoneProperty"
@@ -548,7 +550,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "11"
+            "value": 17
           },
           {
             "type": "NoneProperty"
@@ -578,7 +580,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "10"
+            "value": 16
           },
           {
             "type": "NoneProperty"
@@ -594,7 +596,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "12"
+            "value": 18
           },
           {
             "type": "NoneProperty"
@@ -610,7 +612,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "13"
+            "value": 19
           },
           {
             "type": "NoneProperty"
@@ -626,7 +628,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "0f"
+            "value": 15
           },
           {
             "type": "NoneProperty"
@@ -642,7 +644,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "11"
+            "value": 17
           },
           {
             "type": "NoneProperty"
@@ -658,7 +660,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "12"
+            "value": 18
           },
           {
             "type": "NoneProperty"
@@ -674,7 +676,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "0e"
+            "value": 14
           },
           {
             "type": "NoneProperty"
@@ -690,7 +692,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "0f"
+            "value": 15
           },
           {
             "type": "NoneProperty"
@@ -706,7 +708,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "12"
+            "value": 18
           },
           {
             "type": "NoneProperty"
@@ -722,7 +724,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "20"
+            "value": 32
           },
           {
             "type": "NoneProperty"
@@ -738,7 +740,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "2c"
+            "value": 44
           },
           {
             "type": "NoneProperty"
@@ -754,7 +756,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "27"
+            "value": 39
           },
           {
             "type": "NoneProperty"
@@ -770,7 +772,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "10"
+            "value": 16
           },
           {
             "type": "NoneProperty"
@@ -786,7 +788,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "21"
+            "value": 33
           },
           {
             "type": "NoneProperty"
@@ -802,7 +804,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "21"
+            "value": 33
           },
           {
             "type": "NoneProperty"
@@ -818,7 +820,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "0e"
+            "value": 14
           },
           {
             "type": "NoneProperty"
@@ -834,7 +836,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "1d"
+            "value": 29
           },
           {
             "type": "NoneProperty"
@@ -850,7 +852,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "0e"
+            "value": 14
           },
           {
             "type": "NoneProperty"
@@ -866,7 +868,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "1b"
+            "value": 27
           },
           {
             "type": "NoneProperty"
@@ -882,7 +884,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "0b"
+            "value": 11
           },
           {
             "type": "NoneProperty"
@@ -898,7 +900,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "11"
+            "value": 17
           },
           {
             "type": "NoneProperty"
@@ -914,7 +916,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "0d"
+            "value": 13
           },
           {
             "type": "NoneProperty"
@@ -944,7 +946,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "26"
+            "value": 38
           },
           {
             "type": "NoneProperty"
@@ -960,7 +962,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "55"
+            "value": 85
           },
           {
             "type": "NoneProperty"
@@ -976,7 +978,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "05"
+            "value": 5
           },
           {
             "type": "NoneProperty"
@@ -992,7 +994,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "41"
+            "value": 65
           },
           {
             "type": "NoneProperty"
@@ -1008,7 +1010,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "36"
+            "value": 54
           },
           {
             "type": "NoneProperty"
@@ -1024,7 +1026,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "33"
+            "value": 51
           },
           {
             "type": "NoneProperty"
@@ -1040,7 +1042,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "1a"
+            "value": 26
           },
           {
             "type": "NoneProperty"
@@ -1056,7 +1058,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "1d"
+            "value": 29
           },
           {
             "type": "NoneProperty"
@@ -1072,7 +1074,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "34"
+            "value": 52
           },
           {
             "type": "NoneProperty"
@@ -1088,7 +1090,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "44"
+            "value": 68
           },
           {
             "type": "NoneProperty"
@@ -1104,7 +1106,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "21"
+            "value": 33
           },
           {
             "type": "NoneProperty"
@@ -1120,7 +1122,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "29"
+            "value": 41
           },
           {
             "type": "NoneProperty"
@@ -1136,7 +1138,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "37"
+            "value": 55
           },
           {
             "type": "NoneProperty"
@@ -1152,7 +1154,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "11"
+            "value": 17
           },
           {
             "type": "NoneProperty"
@@ -1168,7 +1170,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "3a"
+            "value": 58
           },
           {
             "type": "NoneProperty"
@@ -1184,7 +1186,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "1c"
+            "value": 28
           },
           {
             "type": "NoneProperty"
@@ -1200,7 +1202,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "17"
+            "value": 23
           },
           {
             "type": "NoneProperty"
@@ -1216,7 +1218,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "18"
+            "value": 24
           },
           {
             "type": "NoneProperty"
@@ -1232,7 +1234,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "15"
+            "value": 21
           },
           {
             "type": "NoneProperty"
@@ -1248,7 +1250,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "15"
+            "value": 21
           },
           {
             "type": "NoneProperty"
@@ -1264,7 +1266,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "1a"
+            "value": 26
           },
           {
             "type": "NoneProperty"
@@ -1280,7 +1282,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "13"
+            "value": 19
           },
           {
             "type": "NoneProperty"
@@ -1296,7 +1298,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "12"
+            "value": 18
           },
           {
             "type": "NoneProperty"
@@ -1312,7 +1314,7 @@
             "type": "ByteProperty",
             "name": "Level",
             "subtype": "None",
-            "value": "0b"
+            "value": 11
           },
           {
             "type": "NoneProperty"
