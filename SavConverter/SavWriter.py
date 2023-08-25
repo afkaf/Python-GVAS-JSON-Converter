@@ -26,3 +26,8 @@ def write_date_time(date_time_string):
 
 def write_bytes(hex_string):
     return bytes.fromhex(hex_string)
+
+def write_int_bytes(x):
+    if x == 0:
+        return b'\x00'
+    return x.to_bytes((x.bit_length() + 7) // 8, 'big')

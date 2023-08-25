@@ -238,6 +238,8 @@ class ByteProperty:
                         struct_element_instance_child_property = sav_reader.read_property()
                         struct_element_instance.append(struct_element_instance_child_property)
                     self.value.append(struct_element_instance)
+        elif self.name == 'Level' and self.subtype == 'None':
+            self.value = int.from_bytes(sav_reader.read_bytes(content_size), 'big')
         else:
             self.value = sav_reader.read_bytes(content_size)
 
@@ -281,6 +283,13 @@ class ByteProperty:
                 + write_string(self.subtype) + write_uint32(len(byte_array_content))
                 + ByteProperty.padding + write_string(self.generic_type)
                 + ByteProperty.unknown + byte_array_content
+            )
+        elif self.name == 'Level' and self.subtype == 'None':
+            content_size = (self.value.bit_length() + 7) // 8
+            result = (
+                write_string(self.name) + write_string(self.type) + write_uint32(content_size)
+                + ByteProperty.padding + write_string(self.subtype) + bytes([0x00])
+                + write_int_bytes(self.value)
             )
         else:
             content_size = len(self.value) // 2
