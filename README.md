@@ -89,6 +89,6 @@ This path leads you directly to a specific part of the JSON structure
 
 ## Example Code
 
-A usage example for all of these functions can be seen in [Example.py](Example.py). You can simply download the zip file, extract it, and run the example.
+A comprehensive usage example for all the available functions is provided in the [Example.py](Example.py) file. This example was developed using the `Crab Champions` `.sav` and `.json` files, which you can find in the [ExampleSavFiles](ExampleSavFiles) directory.
 
 ---
