@@ -164,7 +164,7 @@
       "type": "ByteProperty",
       "name": "NumWeaponModSlots",
       "subtype": "None",
-      "value": "18"
+      "value": 24
     },
     {
       "type": "ArrayProperty",
@@ -562,7 +562,7 @@
       "type": "ByteProperty",
       "name": "NumGrenadeModSlots",
       "subtype": "None",
-      "value": "18"
+      "value": 24
     },
     {
       "type": "ArrayProperty",
@@ -928,7 +928,7 @@
       "type": "ByteProperty",
       "name": "NumPerkSlots",
       "subtype": "None",
-      "value": "18"
+      "value": 24
     },
     {
       "type": "ArrayProperty",
