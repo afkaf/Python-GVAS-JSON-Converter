@@ -2,9 +2,6 @@ from .SavProperties import *
 from struct import pack, unpack
 from datetime import datetime
 
-def read_uint32(data, offset):
-    return unpack('<I', data[offset:offset + 4])[0], offset + 4
-
 class SavReader:
     def __init__(self, file_array_buffer = None):
         self.offset = 0
