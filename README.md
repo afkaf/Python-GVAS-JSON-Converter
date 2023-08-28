@@ -22,7 +22,7 @@ The conversion functions provide an easy way to translate between Unreal Engine'
 
 ### Converting from .sav to .json
 
-1. **Read .sav**: Use `read_sav(filepath)` to get the property instances from the `.sav` file.
+1. **Read .sav**: Use `read_sav(file_path)` to get the property instances from the `.sav` file.
 2. **Convert to JSON**: Use `sav_to_json(props, string=True)` to convert properties to a JSON string. Use the `string` parameter to return a JSON string or object.
 3. **Write to File**: Write the JSON string output to a `.json` file.
 
