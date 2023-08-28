@@ -5,20 +5,20 @@ from SavConverter import load_json, obj_to_json, print_json, get_object_by_path,
 
 # The following lines are an example of the .sav to .json conversion process
 # Get .sav property classes
-properties = read_sav('ExampleSavFiles/SaveSlot_without_AutoSave.sav')
+properties = read_sav('ExampleSavFiles/CrabChampions_SaveSlot_without_AutoSave.sav')
 
 # Convert properties to json
 output = sav_to_json(properties, string = True)
 
 # Write json string to file
-with open('SaveSlot.json', 'w') as json_file:
+with open('CrabChampions_SaveSlot.json', 'w') as json_file:
     json_file.write(output)
 
 
 
 # The following lines are an example of the traversal and manipulation of this specific .json structure using paths
 # load your converted json file
-data = load_json('SaveSlot.json')
+data = load_json('CrabChampions_SaveSlot.json')
 
 # path to the first Weapon object (0) in the list of Weapon objects ('value') in the RankedWeapons object ({"name": "RankedWeapons"})
 path_to_find = [{"name": "RankedWeapons"}, "value", 0]
@@ -65,7 +65,7 @@ if autosave == None:
     path_to_insert = [{"type": "FileEndProperty"}]
 
     # Reading in previously extracted AutoSave object
-    autosave = load_json('ExampleSavFiles/AutoSave.json')
+    autosave = load_json('ExampleSavFiles/CrabChampions_AutoSave.json')
 
     # insert AutoSave object before FileEndProperty object
     insert_object_by_path(data, path_to_insert, autosave, position='before')
@@ -79,6 +79,6 @@ if autosave == None:
 binary_data = json_to_sav(obj_to_json(data))
 
 # write new .sav file converted from .json
-with open('NewSaveSlot.sav', 'wb') as file:
+with open('New_CrabChampions_SaveSlot.sav', 'wb') as file:
         # Write the binary data to the file
         file.write(binary_data)

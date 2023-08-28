@@ -1,6 +1,7 @@
 from .SavProperties import *
 import json
 
+# commented code is for making sure the output binary matches the original during testing of new .sav types
 # with open('ExampleSavFiles/SaveSlot.sav','rb') as f:
 #     original = f.read()
 

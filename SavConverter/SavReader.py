@@ -1,5 +1,9 @@
 from .SavProperties import *
 from struct import pack, unpack
+from datetime import datetime
+
+def read_uint32(data, offset):
+    return unpack('<I', data[offset:offset + 4])[0], offset + 4
 
 class SavReader:
     def __init__(self, file_array_buffer = None):
@@ -49,9 +53,10 @@ class SavReader:
         return result
 
     def read_date_time(self):
-        ticks, _ = read_uint32(self.file_array_buffer[self.offset:self.offset + 8], 0)
+        ticks = int.from_bytes(self.file_array_buffer[self.offset:self.offset + 8], 'little')
         self.offset += 8
-        return datetime.datetime.utcfromtimestamp(ticks / 10000000 - 62135596800)
+        calculated_time = datetime.utcfromtimestamp((ticks // 10000 - 62135596800000) / 1000.0)
+        return calculated_time
 
     def read_property(self):
 
@@ -94,6 +99,10 @@ class SavReader:
             return ArrayProperty(property_name, self)
         elif property_type == "ObjectProperty":
             return ObjectProperty(property_name, self)
+        elif property_type == "MulticastInlineDelegateProperty":
+            return MulticastInlineDelegateProperty(property_name, self)
+        elif property_type == "MapProperty":
+            return MapProperty(property_name, self)
         else:
             raise Exception(f"Unknown property type: {property_type}")
 
@@ -107,8 +116,8 @@ class SavReader:
             output.append(next_property)
         return output
 
-def read_sav(path):
-    with open(path, 'rb') as f:
+def read_sav(file_path):
+    with open(file_path, 'rb') as f:
         file = f.read()
     sav_reader = SavReader(file)
     properties = sav_reader.read_whole_buffer()

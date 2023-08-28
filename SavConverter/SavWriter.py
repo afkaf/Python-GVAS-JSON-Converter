@@ -1,4 +1,5 @@
 from struct import pack
+from datetime import datetime
 
 def write_int16(value):
     return pack('<h', value)
@@ -20,8 +21,9 @@ def write_string(string):
     return bytes([*string_size, *string_array, 0x00])
 
 def write_date_time(date_time_string):
-    date = datetime.fromisoformat(date_time_string)
-    ticks = int(date.timestamp() * 10000) + 621355968000000000
+    dt_object = datetime.strptime(date_time_string, '%Y-%m-%d %H:%M:%S.%f')
+    timestamp_ms = int((dt_object - datetime(1970, 1, 1)).total_seconds() * 1000)
+    ticks = (timestamp_ms + 62135596800000) * 10000    
     return pack('<Q', ticks)
 
 def write_bytes(hex_string):

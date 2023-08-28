@@ -259,10 +259,10 @@ class ByteProperty:
                 for value in self.value:
                     if isinstance(value, list):
                         for child_value in value:
-                            assign_prototype(child_value)
+                            child_value = assign_prototype(child_value)
                             byte_array_content += child_value.to_bytes()
                     else:
-                        assign_prototype(value)
+                        value = assign_prototype(value)
                         byte_array_content += value.to_bytes()
             
             content_size = (
@@ -459,14 +459,18 @@ class ArrayProperty:
         if self.subtype == "StructProperty":
             content_count = len(self.value)
             byte_array_content = bytearray()
-            for value in self.value:
-                if isinstance(value, list):
-                    for item in value:
-                        item = assign_prototype(item)
-                        byte_array_content += item.to_bytes()
-                else:
-                    value = assign_prototype(value)
-                    byte_array_content += value.to_bytes()
+            if self.generic_type == "Guid":
+                for guid in self.value:
+                    byte_array_content += bytes.fromhex(guid)  # Assuming the GUID is a hex string
+            else:
+                for value in self.value:
+                    if isinstance(value, list):
+                        for item in value:
+                            item = assign_prototype(item)
+                            byte_array_content += item.to_bytes()
+                    else:
+                        value = assign_prototype(value)
+                        byte_array_content += value.to_bytes()
 
             content_size = (4 + 4 + len(self.name) + 1 + 4 + len(self.subtype) + 1 + 4 +
                             len(ArrayProperty.padding) + 4 + len(self.generic_type) + 1 +
@@ -484,7 +488,6 @@ class ArrayProperty:
                 byte_array_content += write_string(value)  # Assuming write_string writes a string as bytes
 
             content_size = len(byte_array_content) + 4 #+ len(self.name) + 1 + 4 + len(self.subtype) + 1)
-
 
             return (write_string(self.name) + write_string(self.type) + write_uint32(content_size) +
                     ArrayProperty.padding + write_string(self.subtype) + bytes([0x00]) +
@@ -511,11 +514,18 @@ class MulticastInlineDelegateProperty:
 
     def __init__(self, name, sav_reader):
         self.name = name
+        self.type = "MulticastInlineDelegateProperty"
         sav_reader.read_uint32()  # contentSize
         sav_reader.read_bytes(len(MulticastInlineDelegateProperty.padding))
         sav_reader.read_bytes(len(MulticastInlineDelegateProperty.unknown))
         self.object_name = sav_reader.read_string()
         self.function_name = sav_reader.read_string()
+    
+    @classmethod
+    def from_json(cls, json_dict):
+        instance = cls.__new__(cls) # Create a new instance without calling the constructor
+        instance.__dict__.update(json_dict) # Update the instance attributes with the JSON dictionary
+        return instance
 
     def to_bytes(self):
         content_size = len(MulticastInlineDelegateProperty.unknown) + 4 + len(self.object_name) + 1 + 4 + len(self.function_name) + 1
@@ -530,12 +540,13 @@ class MapProperty:
 
     def __init__(self, name, sav_reader):
         self.name = name
+        self.type = "MapProperty"
         sav_reader.read_uint32()  # contentSize
         sav_reader.read_bytes(len(MapProperty.padding))
         self.key_type = sav_reader.read_string()
         self.value_type = sav_reader.read_string()
         sav_reader.read_bytes(1)
-        temp_map = {}
+        self.value = []
         sav_reader.read_bytes(len(MapProperty.padding))
         content_count = sav_reader.read_uint32()
 
@@ -565,13 +576,17 @@ class MapProperty:
             else:
                 raise Exception(f"Value Type not implemented: {self.value_type}")
 
-            temp_map[current_key] = current_value
+            self.value.append([current_key, current_value])
 
-        self.value = temp_map
+    @classmethod
+    def from_json(cls, json_dict):
+        instance = cls.__new__(cls) # Create a new instance without calling the constructor
+        instance.__dict__.update(json_dict) # Update the instance attributes with the JSON dictionary
+        return instance
 
     def to_bytes(self):
         byte_array_content = bytearray()
-        for current_key, current_value in self.value.items():
+        for current_key, current_value in self.value:
             if self.key_type == "StructProperty":
                 byte_array_content += write_bytes(current_key)
             elif self.key_type == "IntProperty":
@@ -581,7 +596,7 @@ class MapProperty:
 
             if self.value_type == "StructProperty":
                 for item in current_value:
-                    assign_prototype(item)
+                    item = assign_prototype(item)
                     byte_array_content += item.to_bytes()
             elif self.value_type == "IntProperty":
                 byte_array_content += write_int32(current_value)
