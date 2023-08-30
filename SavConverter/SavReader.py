@@ -35,9 +35,15 @@ class SavReader:
         value = unpack('<f', self.file_array_buffer[self.offset:self.offset + 4])[0]
         self.offset += 4
         return value
-    
-    def read_string(self):
-        length = self.read_int32()
+
+    def read_int64(self):
+        value = unpack('<q', self.file_array_buffer[self.offset:self.offset + 8])[0]
+        self.offset += 8
+        return value
+
+    def read_string(self, length = None):
+        if length == None:
+            length = self.read_int32()
         raw_bytes = self.file_array_buffer[self.offset:self.offset + length - 1] # Exclude the null terminator
         # print(f"Reading string, raw bytes: {raw_bytes if len(raw_bytes) <= 250 else raw_bytes[:250]+b'...(Output Continues)'}")  # Debug print
         result = raw_bytes.decode("utf-8")
@@ -52,7 +58,10 @@ class SavReader:
     def read_date_time(self):
         ticks = int.from_bytes(self.file_array_buffer[self.offset:self.offset + 8], 'little')
         self.offset += 8
-        calculated_time = datetime.utcfromtimestamp((ticks // 10000 - 62135596800000) / 1000.0)
+        try:
+            calculated_time = datetime.utcfromtimestamp((ticks // 10000 - 62135596800000) / 1000.0)
+        except:
+            calculated_time = ticks
         return calculated_time
 
     def read_property(self):
@@ -78,6 +87,8 @@ class SavReader:
             return BoolProperty(property_name, self)
         elif property_type == "IntProperty":
             return IntProperty(property_name, self)
+        elif property_type == "Int64Property":
+            return Int64Property(property_name, self)
         elif property_type == "UInt32Property":
             return UInt32Property(property_name, self)
         elif property_type == "FloatProperty":
@@ -92,6 +103,8 @@ class SavReader:
             return StrProperty(property_name, self)
         elif property_type == "NameProperty":
             return NameProperty(property_name, self)
+        elif property_type == "SetProperty":
+            return SetProperty(property_name, self)
         elif property_type == "ArrayProperty":
             return ArrayProperty(property_name, self)
         elif property_type == "ObjectProperty":

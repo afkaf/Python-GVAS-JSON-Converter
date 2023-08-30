@@ -1,5 +1,5 @@
 from .SavWriter import *
-
+print
 def assign_prototype(raw_property):
     property_type = raw_property["type"]
     property_mapping = {
@@ -7,6 +7,7 @@ def assign_prototype(raw_property):
         "NoneProperty": NoneProperty,
         "BoolProperty": BoolProperty,
         "IntProperty": IntProperty,
+        "Int64Property": Int64Property,
         "UInt32Property": UInt32Property,
         "StrProperty": StrProperty,
         "NameProperty": NameProperty,
@@ -134,6 +135,26 @@ class IntProperty:
         return write_string(self.name) + write_string(self.type) + IntProperty.padding + write_int32(self.value)
 
 
+class Int64Property:
+    padding = bytes([0x08] + [0x00] * 8)  # Assuming 8 bytes for int64 and appropriate padding
+    type = "Int64Property"
+
+    def __init__(self, name, sav_reader):
+        self.type = "Int64Property"
+        self.name = name
+        sav_reader.read_bytes(len(Int64Property.padding))
+        self.value = sav_reader.read_int64()
+
+    @classmethod
+    def from_json(cls, json_dict):
+        instance = cls.__new__(cls)  # Create a new instance without calling the constructor
+        instance.__dict__.update(json_dict)  # Update the instance attributes with the JSON dictionary
+        return instance
+
+    def to_bytes(self):
+        return write_string(self.name) + write_string(self.type) + Int64Property.padding + write_int64(self.value)  # Assuming write_int64 writes an int64 to bytes
+
+
 class UInt32Property:
     padding = bytes([0x04] + [0x00] * 8)
     type = "UInt32Property"
@@ -163,7 +184,11 @@ class StrProperty:
         self.name = name
         self.unknown = sav_reader.read_bytes(1)
         sav_reader.read_bytes(len(StrProperty.padding))
-        self.value = sav_reader.read_string()
+        try:
+            self.value = sav_reader.read_string(length = int(self.unknown.hex(), 16))[4:]
+        except UnicodeDecodeError:
+            self.note = "Value converted to hex due to decode error."
+            self.value = sav_reader.read_bytes(int(self.unknown.hex(), 16))
 
     @classmethod
     def from_json(cls, json_dict):
@@ -172,7 +197,11 @@ class StrProperty:
         return instance
 
     def to_bytes(self):
-        return (write_string(self.name) + write_string(self.type) + write_bytes(self.unknown) +
+        if hasattr(self, 'note'):
+            return (write_string(self.name) + write_string(self.type) + write_bytes(self.unknown) +
+                StrProperty.padding + write_bytes(self.value))
+        else:
+            return (write_string(self.name) + write_string(self.type) + write_bytes(self.unknown) +
                 StrProperty.padding + write_string(self.value))
 
 
@@ -391,7 +420,6 @@ class StructProperty:
             else:
                 value = assign_prototype(value)
                 content_bytes += value.to_bytes()
-
         return (write_string(self.name) + write_string(self.type) + write_uint32(len(content_bytes)) +
                 StructProperty.padding + write_string(self.subtype) + StructProperty.unknown +
                 content_bytes)
@@ -558,6 +586,8 @@ class MapProperty:
                 current_key = sav_reader.read_bytes(16)
             elif self.key_type == "IntProperty":
                 current_key = sav_reader.read_int32()
+            elif self.key_type == "StrProperty":
+                current_key = sav_reader.read_string()
             else:
                 raise Exception(f"Key Type not implemented: {self.key_type}")
 
@@ -571,6 +601,8 @@ class MapProperty:
                 current_value = sav_reader.read_int32()
             elif self.value_type == "FloatProperty":
                 current_value = sav_reader.read_float32()
+            elif self.value_type == "StrProperty":
+                current_value = sav_reader.read_string()
             elif self.value_type == "BoolProperty":
                 current_value = bool(sav_reader.read_bytes(1)[0])
             else:
@@ -591,6 +623,8 @@ class MapProperty:
                 byte_array_content += write_bytes(current_key)
             elif self.key_type == "IntProperty":
                 byte_array_content += write_int32(current_key)
+            elif self.key_type == "StrProperty":
+                byte_array_content += write_string(current_key)
             else:
                 raise Exception(f"Key Type not implemented: {self.key_type}")
 
@@ -602,6 +636,8 @@ class MapProperty:
                 byte_array_content += write_int32(current_value)
             elif self.value_type == "FloatProperty":
                 byte_array_content += write_float32(current_value)
+            elif self.value_type == "StrProperty":
+                byte_array_content += write_string(current_value)
             elif self.value_type == "BoolProperty":
                 byte_array_content += bytes([0x01]) if current_value else bytes([0x00])
             else:
@@ -618,6 +654,7 @@ class SetProperty:
 
     def __init__(self, name, sav_reader):
         self.name = name
+        self.type = "SetProperty"
         content_size = sav_reader.read_uint32()
         sav_reader.read_bytes(len(SetProperty.padding))
         self.subtype = sav_reader.read_string()
@@ -630,6 +667,12 @@ class SetProperty:
         else:
             self.value = sav_reader.read_bytes(content_size)
 
+    @classmethod
+    def from_json(cls, json_dict):
+        instance = cls.__new__(cls) # Create a new instance without calling the constructor
+        instance.__dict__.update(json_dict) # Update the instance attributes with the JSON dictionary
+        return instance
+
     def to_bytes(self):
         if self.subtype == "StructProperty":
             content_count = len(self.value)
@@ -639,7 +682,6 @@ class SetProperty:
             return (write_string(self.name) + write_string(self.type) + write_uint32(4 + 4 + len(byte_array_content)) +
                     SetProperty.padding + write_string(self.subtype) + bytes([0x00]) +
                     SetProperty.padding + write_uint32(content_count) + byte_array_content)
-
         return (write_string(self.name) + write_string(self.type) + write_uint32(len(self.value) // 2) +
                 SetProperty.padding + write_string(self.subtype) + bytes([0x00]) + write_bytes(self.value))
 
