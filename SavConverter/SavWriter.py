@@ -16,12 +16,19 @@ def write_float32(value):
 def write_int64(value):
     return pack('<q', value)
 
-def write_string(string):
+def write_string(string, wide = False):
     if string == '':
         return bytes([0x00,0x00,0x00,0x00])
-    string_size = write_uint32(len(string) + 1)
-    string_array = string.encode()
-    return bytes([*string_size, *string_array, 0x00])
+    null = 1
+    length = len(string) + 1
+    encoding = 'utf-8'
+    if wide:
+        null = 2
+        length = -length
+        encoding = 'utf-16-le'
+    string_size = write_int32(length)
+    string_array = string.encode(encoding)
+    return bytes([*string_size, *string_array] + [0x00]*null)
 
 def write_date_time(date_time_string):
     if isinstance(date_time_string, int):

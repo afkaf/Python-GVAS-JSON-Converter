@@ -41,14 +41,27 @@ class SavReader:
         self.offset += 8
         return value
 
-    def read_string(self, length = None):
-        if length == None:
-            length = self.read_int32()
+    def read_string(self):
+        length = self.read_int32()
         raw_bytes = self.file_array_buffer[self.offset:self.offset + length - 1] # Exclude the null terminator
-        # print(f"Reading string, raw bytes: {raw_bytes if len(raw_bytes) <= 250 else raw_bytes[:250]+b'...(Output Continues)'}")  # Debug print
-        result = raw_bytes.decode("utf-8")
+        result = raw_bytes.decode('utf-8')
         self.offset += length
         return result
+    
+    def read_string_special(self):
+        length = self.read_int32()
+        wide = False
+        encoding = "utf-8"
+        null = 1
+        if length < 0:
+            length = abs(length)*2
+            wide = True
+            encoding = 'utf-16-le'
+            null = 2
+        raw_bytes = self.file_array_buffer[self.offset:self.offset + length - null] # Exclude the null terminator
+        result = raw_bytes.decode(encoding)
+        self.offset += length
+        return result, wide
 
     def read_boolean(self):
         result = bool(self.file_array_buffer[self.offset])

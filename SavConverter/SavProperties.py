@@ -184,12 +184,9 @@ class StrProperty:
         self.name = name
         self.unknown = sav_reader.read_bytes(1)
         sav_reader.read_bytes(len(StrProperty.padding))
-        try:
-            self.value = sav_reader.read_string(length = int(self.unknown.hex(), 16))[4:]
-        except UnicodeDecodeError:
-            self.note = "Value converted to hex due to decode error."
-            self.value = sav_reader.read_bytes(int(self.unknown.hex(), 16))
-
+        self.value, iswide = sav_reader.read_string_special()
+        if iswide:
+            self.wide = True
     @classmethod
     def from_json(cls, json_dict):
         instance = cls.__new__(cls) # Create a new instance without calling the constructor
@@ -197,12 +194,8 @@ class StrProperty:
         return instance
 
     def to_bytes(self):
-        if hasattr(self, 'note'):
-            return (write_string(self.name) + write_string(self.type) + write_bytes(self.unknown) +
-                StrProperty.padding + write_bytes(self.value))
-        else:
-            return (write_string(self.name) + write_string(self.type) + write_bytes(self.unknown) +
-                StrProperty.padding + write_string(self.value))
+        return (write_string(self.name) + write_string(self.type) + write_bytes(self.unknown) +
+            StrProperty.padding + write_string(self.value, self.wide if hasattr(self, 'wide') else False))
 
 
 class NameProperty:
