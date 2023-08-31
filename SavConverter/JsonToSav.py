@@ -5,12 +5,13 @@ import json
 # with open('ExampleSavFiles/SaveSlot.sav','rb') as f:
 #     original = f.read()
 
-def json_to_sav(json_string):
-    properties = json.loads(json_string)
+def json_to_sav(data):
+    if isinstance(data, str):
+        data = json.loads(data)
     output = bytearray()
     last = 0
-    for raw_property in properties:
-        property_instance = assign_prototype(raw_property)
+    for obj in data:
+        property_instance = assign_prototype(obj)
         bytestring = property_instance.to_bytes()
         output.extend(bytestring)
         # if not original[last:len(output)] == bytestring:

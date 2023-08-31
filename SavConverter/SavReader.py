@@ -131,7 +131,10 @@ class SavReader:
 
     def read_whole_buffer(self):
         output = []
-        header_property = HeaderProperty(self)
+        try:
+            header_property = HeaderProperty(self)
+        except UnicodeDecodeError as e:
+            raise Exception('Invalid or obfuscated GVAS .sav format. Please provide a path to a valid Unreal Engine GVAS .sav file.')
         output.append(header_property)
 
         while not self.has_finished():
@@ -140,6 +143,8 @@ class SavReader:
         return output
 
 def read_sav(file_path):
+    if file_path[-4:] != '.sav':
+        raise ValueError("Please provide a path to a valid Unreal Engine GVAS .sav file.")
     with open(file_path, 'rb') as f:
         file = f.read()
     sav_reader = SavReader(file)

@@ -374,13 +374,16 @@ class StructProperty:
         self.subtype = sav_reader.read_string()
         sav_reader.read_bytes(17)
         content_end_position = sav_reader.offset + content_size
-
         if self.subtype == "Guid":
             self.value = sav_reader.read_bytes(16)
             return
 
         if self.subtype == "DateTime":
             self.value = sav_reader.read_date_time()
+            return
+
+        if self.subtype in ["Quat", "Vector", "Rotator"]:
+            self.value = sav_reader.read_bytes(content_size)
             return
 
         self.value = []
@@ -403,6 +406,11 @@ class StructProperty:
             return (write_string(self.name) + write_string(self.type) + write_uint32(8) +
                     StructProperty.padding + write_string("DateTime") + StructProperty.unknown +
                     write_date_time(self.value))
+
+        if self.subtype in ["Quat", "Vector", "Rotator"]:
+            return (write_string(self.name) + write_string(self.type) + write_uint32(len(self.value)//2) +
+                    StructProperty.padding + write_string(self.subtype) + StructProperty.unknown +
+                    write_bytes(self.value))
 
         content_bytes = bytearray()
         for value in self.value:
@@ -564,7 +572,7 @@ class MapProperty:
                 current_key = sav_reader.read_bytes(16)
             elif self.key_type == "IntProperty":
                 current_key = sav_reader.read_int32()
-            elif self.key_type == "StrProperty":
+            elif self.key_type in ["StrProperty","NameProperty"]:
                 current_key = sav_reader.read_string()
             else:
                 raise Exception(f"Key Type not implemented: {self.key_type}")
@@ -601,7 +609,7 @@ class MapProperty:
                 byte_array_content += write_bytes(current_key)
             elif self.key_type == "IntProperty":
                 byte_array_content += write_int32(current_key)
-            elif self.key_type == "StrProperty":
+            elif self.key_type in ["StrProperty","NameProperty"]:
                 byte_array_content += write_string(current_key)
             else:
                 raise Exception(f"Key Type not implemented: {self.key_type}")

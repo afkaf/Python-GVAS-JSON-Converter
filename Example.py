@@ -1,20 +1,20 @@
-# imports to conver between .sav and .json
-from SavConverter import sav_to_json, read_sav, json_to_sav
+# imports to convert between .sav and .json
+from SavConverter import sav_to_json, read_sav, json_to_sav, load_json
 # imports to navigate and manipulate the json structure
-from SavConverter import load_json, obj_to_json, print_json, get_object_by_path, insert_object_by_path, replace_object_by_path, update_property_by_path
+from SavConverter import obj_to_json, print_json, get_object_by_path, insert_object_by_path, replace_object_by_path, update_property_by_path
 
 # The following lines are an example of the .sav to .json conversion process
 # Get .sav property classes
-properties = read_sav('ExampleSavFiles/CrabChampions_SaveSlot_without_AutoSave.sav')
+properties = read_sav('ExampleSavFiles/SavedUserOptions.sav')
 
 # Convert properties to json
 output = sav_to_json(properties, string = True)
 
 # Write json string to file
-with open('CrabChampions_SaveSlot.json', 'w') as json_file:
+with open('SavedUserOptions.json', 'w') as json_file:
     json_file.write(output)
 
-
+quit()
 
 # The following lines are an example of the traversal and manipulation of this specific .json structure using paths
 # load your converted json file
@@ -76,7 +76,7 @@ if autosave == None:
 
 # The following lines show the process of converting the edited .json back to .sav
 # Converting json string back to binary
-binary_data = json_to_sav(obj_to_json(data))
+binary_data = json_to_sav(data)
 
 # write new .sav file converted from .json
 with open('New_CrabChampions_SaveSlot.sav', 'wb') as file:
