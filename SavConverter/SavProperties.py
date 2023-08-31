@@ -136,7 +136,7 @@ class IntProperty:
 
 
 class Int64Property:
-    padding = bytes([0x08] + [0x00] * 8)  # Assuming 8 bytes for int64 and appropriate padding
+    padding = bytes([0x08] + [0x00] * 8)
     type = "Int64Property"
 
     def __init__(self, name, sav_reader):
@@ -459,12 +459,8 @@ class ArrayProperty:
                         struct_element_instance_child_property = sav_reader.read_property()
                         struct_element_instance.append(struct_element_instance_child_property)
                     self.value.append(struct_element_instance)
-        elif self.subtype == "ObjectProperty":
+        elif self.subtype in ["ObjectProperty", "EnumProperty", "NameProperty", "StrProperty"]:
             # Read the number of ObjectProperty elements in the array
-            content_count = sav_reader.read_uint32()
-            self.value = [sav_reader.read_string() for _ in range(content_count)]
-        elif self.subtype == "EnumProperty":
-            # New code for EnumProperty
             content_count = sav_reader.read_uint32()
             self.value = [sav_reader.read_string() for _ in range(content_count)]
         else:
@@ -482,7 +478,7 @@ class ArrayProperty:
             byte_array_content = bytearray()
             if self.generic_type == "Guid":
                 for guid in self.value:
-                    byte_array_content += bytes.fromhex(guid)  # Assuming the GUID is a hex string
+                    byte_array_content += bytes.fromhex(guid)
             else:
                 for value in self.value:
                     if isinstance(value, list):
@@ -502,22 +498,11 @@ class ArrayProperty:
                     write_uint32(content_count) + write_string(self.name) + write_string(self.subtype) +
                     write_uint32(len(byte_array_content)) + ArrayProperty.padding +
                     write_string(self.generic_type) + ArrayProperty.unknown + byte_array_content)
-        elif self.subtype == "ObjectProperty":
+        elif self.subtype in ["ObjectProperty", "EnumProperty", "NameProperty", "StrProperty"]:
             content_count = len(self.value)
             byte_array_content = bytearray()
             for value in self.value:
-                byte_array_content += write_string(value)  # Assuming write_string writes a string as bytes
-
-            content_size = len(byte_array_content) + 4 #+ len(self.name) + 1 + 4 + len(self.subtype) + 1)
-
-            return (write_string(self.name) + write_string(self.type) + write_uint32(content_size) +
-                    ArrayProperty.padding + write_string(self.subtype) + bytes([0x00]) +
-                    write_uint32(content_count) + byte_array_content)
-        elif self.subtype == "EnumProperty":
-            content_count = len(self.value)
-            byte_array_content = bytearray()
-            for value in self.value:
-                byte_array_content += write_string(value)  # Assuming write_string writes a string as bytes
+                byte_array_content += write_string(value)
 
             content_size = len(byte_array_content) + 4
             return (write_string(self.name) + write_string(self.type) + write_uint32(content_size) +
