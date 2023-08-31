@@ -13,6 +13,7 @@ Python-GVAS-JSON-Converter is a library designed to convert Unreal Engine's Game
   - **`Crab Champions`**
   - **`Deep Rock Galactic`**
   - **`Hogwarts Legacy`**
+  - **`Stray`**
 - **Actively Developed**: This project is actively being developed, with new features and improvements being added.
 
 ## Warning
