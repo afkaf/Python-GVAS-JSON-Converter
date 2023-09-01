@@ -5,16 +5,16 @@ from SavConverter import obj_to_json, print_json, get_object_by_path, insert_obj
 
 # The following lines are an example of the .sav to .json conversion process
 # Get .sav property classes
-properties = read_sav('ExampleSavFiles/SavedUserOptions.sav')
+properties = read_sav('ExampleSavFiles/CrabChampions_SaveSlot_without_AutoSave.sav')
 
 # Convert properties to json
 output = sav_to_json(properties, string = True)
 
 # Write json string to file
-with open('SavedUserOptions.json', 'w') as json_file:
+with open('CrabChampions_SaveSlot.json', 'w') as json_file:
     json_file.write(output)
 
-quit()
+
 
 # The following lines are an example of the traversal and manipulation of this specific .json structure using paths
 # load your converted json file
