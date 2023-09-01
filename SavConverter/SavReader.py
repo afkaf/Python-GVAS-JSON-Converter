@@ -122,6 +122,8 @@ class SavReader:
             return ArrayProperty(property_name, self)
         elif property_type == "ObjectProperty":
             return ObjectProperty(property_name, self)
+        elif property_type == "SoftObjectProperty":
+            return SoftObjectProperty(property_name, self)
         elif property_type == "MulticastInlineDelegateProperty":
             return MulticastInlineDelegateProperty(property_name, self)
         elif property_type == "MapProperty":

@@ -20,6 +20,7 @@ def assign_prototype(raw_property):
         "MapProperty": MapProperty,
         "SetProperty": SetProperty,
         "ObjectProperty": ObjectProperty,
+        "SoftObjectProperty": SoftObjectProperty,
         "FileEndProperty": FileEndProperty
     }
     
@@ -587,7 +588,7 @@ class MapProperty:
                 current_value = sav_reader.read_int32()
             elif self.value_type == "FloatProperty":
                 current_value = sav_reader.read_float32()
-            elif self.value_type == "StrProperty":
+            elif self.value_type in ["StrProperty", "EnumProperty"]:
                 current_value = sav_reader.read_string()
             elif self.value_type == "BoolProperty":
                 current_value = bool(sav_reader.read_bytes(1)[0])
@@ -622,7 +623,7 @@ class MapProperty:
                 byte_array_content += write_int32(current_value)
             elif self.value_type == "FloatProperty":
                 byte_array_content += write_float32(current_value)
-            elif self.value_type == "StrProperty":
+            elif self.value_type in ["StrProperty", "EnumProperty"]:
                 byte_array_content += write_string(current_value)
             elif self.value_type == "BoolProperty":
                 byte_array_content += bytes([0x01]) if current_value else bytes([0x00])
@@ -649,7 +650,18 @@ class SetProperty:
         if self.subtype == "StructProperty":
             sav_reader.read_bytes(len(SetProperty.padding))
             content_count = sav_reader.read_uint32()
-            self.value = [sav_reader.read_bytes(16) for _ in range(content_count)]
+            self.value = [] #[sav_reader.read_property() for _ in range(content_count)]
+            for _ in range(content_count):
+                struct_element_instance = []
+                struct_element_instance_child_property = None
+                while not isinstance(struct_element_instance_child_property, NoneProperty):
+                    struct_element_instance_child_property = sav_reader.read_property()
+                    struct_element_instance.append(struct_element_instance_child_property)
+                self.value.append(struct_element_instance)
+        elif self.subtype == "NameProperty":
+            sav_reader.read_bytes(4)
+            content_count = sav_reader.read_uint32()
+            self.value = [sav_reader.read_string() for _ in range(content_count)]
         else:
             self.value = sav_reader.read_bytes(content_size)
 
@@ -664,10 +676,27 @@ class SetProperty:
             content_count = len(self.value)
             byte_array_content = bytearray()
             for value in self.value:
-                byte_array_content += write_bytes(value)
-            return (write_string(self.name) + write_string(self.type) + write_uint32(4 + 4 + len(byte_array_content)) +
-                    SetProperty.padding + write_string(self.subtype) + bytes([0x00]) +
-                    SetProperty.padding + write_uint32(content_count) + byte_array_content)
+                    if isinstance(value, list):
+                        for item in value:
+                            item = assign_prototype(item)
+                            byte_array_content += item.to_bytes()
+                    else:
+                        value = assign_prototype(value)
+                        byte_array_content += value.to_bytes()
+            content_size = 4 + 4 + len(byte_array_content)
+            return (write_string(self.name) + write_string(self.type) + write_uint32(content_size) +
+                SetProperty.padding + write_string(self.subtype) + bytes([0x00]) + SetProperty.padding + 
+                write_uint32(content_count) + byte_array_content)
+        elif self.subtype == "NameProperty":
+            content_count = len(self.value)
+            byte_array_content = bytearray()
+            for value in self.value:
+                byte_array_content += write_string(value)
+
+            content_size = len(byte_array_content) + 8
+            return (write_string(self.name) + write_string(self.type) + write_uint32(content_size) +
+                    ArrayProperty.padding + write_string(self.subtype) + bytes([0x00,0x00,0x00,0x00,0x00]) +
+                    write_uint32(content_count) + byte_array_content)
         return (write_string(self.name) + write_string(self.type) + write_uint32(len(self.value) // 2) +
                 SetProperty.padding + write_string(self.subtype) + bytes([0x00]) + write_bytes(self.value))
 
@@ -693,6 +722,27 @@ class ObjectProperty:
         return (write_string(self.name) + write_string(self.type) + write_uint32(len(self.value) + 5) +
                 ObjectProperty.padding + write_string(self.value))
 
+class SoftObjectProperty:
+    padding = bytes([0x00, 0x00, 0x00, 0x00, 0x00])
+    type = "SoftObjectProperty"
+
+    def __init__(self, name, sav_reader):
+        self.type = "SoftObjectProperty"
+        self.name = name
+        content_size = sav_reader.read_uint32()  # contentSize
+        sav_reader.read_bytes(len(SoftObjectProperty.padding))
+        self.value = sav_reader.read_string()
+        sav_reader.read_bytes(4)
+
+    @classmethod
+    def from_json(cls, json_dict):
+        instance = cls.__new__(cls) # Create a new instance without calling the constructor
+        instance.__dict__.update(json_dict) # Update the instance attributes with the JSON dictionary
+        return instance
+
+    def to_bytes(self):
+        return (write_string(self.name) + write_string(self.type) + write_uint32(len(self.value) + 5 + 4) +
+                SoftObjectProperty.padding + write_string(self.value)) + bytes([0x00, 0x00, 0x00, 0x00])
 
 class FileEndProperty:
     def __init__(self):
