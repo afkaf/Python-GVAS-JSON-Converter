@@ -135,8 +135,8 @@ class SavReader:
         output = []
         try:
             header_property = HeaderProperty(self)
-        except UnicodeDecodeError as e:
-            raise Exception('Invalid or obfuscated GVAS .sav format. Please provide a path to a valid Unreal Engine GVAS .sav file.')
+        except:
+            raise Exception('Failed to read HeaderProperty due to invalid or obfuscated GVAS .sav format.\nPlease provide a path to a valid uncompressed Unreal Engine GVAS .sav file.')
         output.append(header_property)
 
         while not self.has_finished():
