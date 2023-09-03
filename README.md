@@ -2,7 +2,7 @@
 
 # Python-GVAS-JSON-Converter
 
-Python-GVAS-JSON-Converter is a library designed to convert Unreal Engine's Game Variable and Attribute System (GVAS) files between `.sav` and `.json` formats. It provides a way to read and interpret the binary structure of `.sav` files and translate them into human-readable JSON format, as well as convert JSON back to the original `.sav` format.
+Python-GVAS-JSON-Converter (SavConverter) is a library designed to convert Unreal Engine's Game Variable and Attribute System (GVAS) files between `.sav` and `.json` formats. It provides a way to read and interpret the binary structure of `.sav` files and translate them into human-readable JSON format, as well as convert JSON back to the original `.sav` format.
 
 ## Features
 
