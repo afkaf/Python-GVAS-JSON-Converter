@@ -29,7 +29,7 @@ To install SavConverter, you can use pip. Open your terminal and run the followi
 pip install SavConverter
 ```
 
-This will install the latest version of SavConverter and its dependencies.
+This will install the latest version of SavConverter.
 
 ## Using the Conversion Functions
 
